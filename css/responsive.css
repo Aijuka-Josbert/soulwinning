@@ -1,0 +1,79 @@
+/* Additional responsive tweaks */
+@media (max-width: 768px) {
+    h1 { font-size: 2.2rem; }
+    h2 { font-size: 1.8rem; }
+    h3 { font-size: 1.4rem; }
+    section { padding: 2.5rem 0; }
+    .service-grid {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+    .hero-content {
+        padding: 1rem;
+    }
+    .hero-title {
+        font-size: 2.2rem;
+    }
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+    .timeline-item {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    .timeline-marker {
+        flex: 0 0 auto;
+        text-align: left;
+    }
+    .values-list {
+        grid-template-columns: 1fr;
+    }
+    .vm-grid {
+        grid-template-columns: 1fr;
+    }
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-text {
+        font-size: 0.9rem;
+    }
+    .btn {
+        padding: 0.4rem 1.2rem;
+        font-size: 0.9rem;
+    }
+    .hero-title {
+        font-size: 1.8rem;
+    }
+    .invite-block {
+        padding: 2rem 1rem;
+    }
+}
+/* Hero highlight box */
+.hero-highlight {
+  margin-top: 2rem;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(4px);
+  padding: 0.8rem 1.5rem;
+  border-radius: 40px;
+  display: inline-block;
+  color: var(--color-white);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.hero-highlight i {
+  margin-right: 0.75rem;
+  color: var(--color-gold);
+}
+@media (max-width: 600px) {
+  .hero-highlight {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+  .visit-buttons .btn {
+    width: 100%;
+    text-align: center;
+  }
+}

@@ -1,0 +1,110 @@
+/* Shared layout helpers */
+section {
+    padding: 4rem 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+@media (max-width: 768px) {
+    .grid-2 {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Placeholder images */
+.placeholder-image {
+    background-color: var(--color-ivory);
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
+    padding: 2rem 1rem;
+    text-align: center;
+    color: var(--color-muted-text);
+    min-height: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.placeholder-image i {
+    font-size: 2.4rem;
+    color: var(--color-gold);
+    opacity: 0.6;
+}
+
+.placeholder-image.small {
+    min-height: 100px;
+    padding: 1rem;
+}
+
+.placeholder-image.small i {
+    font-size: 1.6rem;
+}
+
+.placeholder-image span {
+    font-size: 0.95rem;
+}
+
+.placeholder-image small {
+    font-size: 0.75rem;
+    opacity: 0.7;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 0.6rem 1.6rem;
+    border: 1px solid transparent;
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    font-family: var(--font-body);
+    cursor: pointer;
+    transition: background var(--transition-speed), color var(--transition-speed), border-color var(--transition-speed);
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: var(--color-burgundy);
+    color: var(--color-white);
+    border-color: var(--color-burgundy);
+}
+.btn-primary:hover {
+    background-color: var(--color-burgundy-dark);
+    border-color: var(--color-burgundy-dark);
+    color: var(--color-white);
+}
+
+.btn-outline {
+    background: transparent;
+    border-color: var(--color-burgundy);
+    color: var(--color-burgundy);
+}
+.btn-outline:hover {
+    background: var(--color-burgundy);
+    color: var(--color-white);
+}
+
+.btn-outline-light {
+    background: transparent;
+    border-color: var(--color-white);
+    color: var(--color-white);
+}
+.btn-outline-light:hover {
+    background: var(--color-white);
+    color: var(--color-burgundy);
+}
+
+.btn-sm {
+    padding: 0.35rem 1rem;
+    font-size: 0.9rem;
+}

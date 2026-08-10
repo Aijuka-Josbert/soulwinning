@@ -1,0 +1,20 @@
+:root {
+    --color-burgundy: #641C1C;
+    --color-burgundy-dark: #431313;
+    --color-gold: #B08A45;
+    --color-ivory: #F8F5EF;
+    --color-cream: #FFFCF7;
+    --color-charcoal: #252321;
+    --color-muted-text: #6B6660;
+    --color-border: #DED6C9;
+    --color-white: #FFFFFF;
+
+    --font-primary: 'Georgia', 'Times New Roman', serif;
+    --font-body: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+
+    --max-width: 1200px;
+    --spacing-unit: 1.5rem;
+    --border-radius: 0.25rem;
+    --shadow-subtle: 0 2px 8px rgba(0,0,0,0.04);
+    --transition-speed: 0.25s;
+}

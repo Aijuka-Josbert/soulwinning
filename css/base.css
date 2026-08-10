@@ -1,0 +1,294 @@
+/* ============================================================
+   BASE.CSS – clean, no emoji, with testimonies
+   ============================================================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-cream);
+  color: var(--color-charcoal);
+  line-height: 1.7;
+  font-size: 1.0625rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-primary);
+  font-weight: 400;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+  color: var(--color-charcoal);
+}
+
+h1 {
+  font-size: 2.8rem;
+}
+h2 {
+  font-size: 2.2rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+h3 {
+  font-size: 1.6rem;
+}
+
+p {
+  margin-bottom: 1rem;
+  color: var(--color-muted-text);
+}
+
+a {
+  color: var(--color-burgundy);
+  text-decoration: none;
+  transition: color var(--transition-speed);
+}
+a:hover {
+  color: var(--color-burgundy-dark);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+ul,
+ol {
+  padding-left: 1.5rem;
+}
+
+blockquote {
+  border-left: 4px solid var(--color-gold);
+  padding-left: 1.5rem;
+  margin: 1.5rem 0;
+  font-style: italic;
+  color: var(--color-muted-text);
+}
+cite {
+  display: block;
+  margin-top: 0.5rem;
+  font-style: normal;
+  font-size: 0.9rem;
+  color: var(--color-muted-text);
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+/* ----- Scroll Animations (staggered) ----- */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(40px);
+  transition:
+    opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.animate-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.animate-on-scroll.visible .timeline-item,
+.animate-on-scroll.visible .ministry-item,
+.animate-on-scroll.visible .journey-step,
+.animate-on-scroll.visible .activity-item,
+.animate-on-scroll.visible .event-item,
+.animate-on-scroll.visible .gallery-item,
+.animate-on-scroll.visible .testimony-item {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: staggerFadeUp 0.6s forwards;
+}
+
+.animate-on-scroll.visible .timeline-item:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.animate-on-scroll.visible .timeline-item:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.animate-on-scroll.visible .timeline-item:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.animate-on-scroll.visible .ministry-item:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.animate-on-scroll.visible .ministry-item:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.animate-on-scroll.visible .ministry-item:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.animate-on-scroll.visible .ministry-item:nth-child(4) {
+  animation-delay: 0.4s;
+}
+.animate-on-scroll.visible .ministry-item:nth-child(5) {
+  animation-delay: 0.5s;
+}
+.animate-on-scroll.visible .journey-step:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.animate-on-scroll.visible .journey-step:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.animate-on-scroll.visible .journey-step:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.animate-on-scroll.visible .journey-step:nth-child(4) {
+  animation-delay: 0.4s;
+}
+.animate-on-scroll.visible .journey-step:nth-child(5) {
+  animation-delay: 0.5s;
+}
+.animate-on-scroll.visible .event-item:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.animate-on-scroll.visible .event-item:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.animate-on-scroll.visible .event-item:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.animate-on-scroll.visible .event-item:nth-child(4) {
+  animation-delay: 0.4s;
+}
+.animate-on-scroll.visible .gallery-item:nth-child(1) {
+  animation-delay: 0.05s;
+}
+.animate-on-scroll.visible .gallery-item:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.animate-on-scroll.visible .gallery-item:nth-child(3) {
+  animation-delay: 0.15s;
+}
+.animate-on-scroll.visible .gallery-item:nth-child(4) {
+  animation-delay: 0.2s;
+}
+.animate-on-scroll.visible .gallery-item:nth-child(5) {
+  animation-delay: 0.25s;
+}
+.animate-on-scroll.visible .gallery-item:nth-child(6) {
+  animation-delay: 0.3s;
+}
+.animate-on-scroll.visible .testimony-item:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.animate-on-scroll.visible .testimony-item:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.animate-on-scroll.visible .testimony-item:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+@keyframes staggerFadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ----- Back to top ----- */
+.back-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background: var(--color-burgundy);
+  color: var(--color-white);
+  border: none;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+  opacity: 0;
+  transform: translateY(20px);
+  transition:
+    opacity 0.3s,
+    transform 0.3s,
+    background 0.3s;
+  z-index: 999;
+}
+.back-to-top.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.back-to-top:hover {
+  background: var(--color-burgundy-dark);
+}
+
+/* ----- Hero background ----- */
+.hero-image {
+  position: relative;
+  height: 100%;
+  min-height: 500px;
+  overflow: hidden;
+}
+.hero-image .hero-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.hero-image .hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(37, 35, 33, 0.85) 0%,
+    rgba(100, 28, 28, 0.5) 100%
+  );
+  z-index: 1;
+}
+.hero-content {
+  position: relative;
+  z-index: 2;
+  padding: 4rem 0;
+}
+
+/* ----- Placeholder images (no emoji) ----- */
+.placeholder-img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  background: var(--color-ivory);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  color: var(--color-muted-text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+}
+.placeholder-img::after {
+  content: "Photo coming soon";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background: var(--color-ivory);
+  color: var(--color-muted-text);
+  font-size: 0.9rem;
+}
