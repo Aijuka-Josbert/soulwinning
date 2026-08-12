@@ -1,31 +1,4 @@
 document.addEventListener('DOMContentLoaded', function () {
-  // ---- SCROLL SPY (Active Nav) ----
-  const sections = document.querySelectorAll('section[id]');
-  const navLinks = document.querySelectorAll('.nav-list a');
-
-  function updateActiveNav() {
-    let currentSectionId = '';
-    const scrollY = window.scrollY + 120; // offset for header
-
-    sections.forEach((section) => {
-      const sectionTop = section.offsetTop;
-      const sectionHeight = section.offsetHeight;
-      if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
-        currentSectionId = section.getAttribute('id');
-      }
-    });
-
-    navLinks.forEach((link) => {
-      link.classList.remove('active');
-      if (link.getAttribute('href') === `#${currentSectionId}`) {
-        link.classList.add('active');
-      }
-    });
-  }
-
-  window.addEventListener('scroll', updateActiveNav);
-  window.addEventListener('load', updateActiveNav);
-
   // ---- SCROLL ANIMATIONS (Intersection Observer) ----
   const animateElements = document.querySelectorAll('.animate-on-scroll');
   const observer = new IntersectionObserver(
@@ -58,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  // ---- SMOOTH SCROLL FOR NAV ----
+  // ---- SMOOTH SCROLL FOR ANCHOR LINKS (if any remain) ----
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     anchor.addEventListener('click', function (e) {
       const href = this.getAttribute('href');
@@ -67,13 +40,6 @@ document.addEventListener('DOMContentLoaded', function () {
       if (target) {
         e.preventDefault();
         target.scrollIntoView({ behavior: 'smooth' });
-        // Close mobile nav if open
-        const navPrimary = document.getElementById('navPrimary');
-        const navToggle = document.getElementById('navToggle');
-        if (navPrimary && navPrimary.classList.contains('open')) {
-          navPrimary.classList.remove('open');
-          navToggle.setAttribute('aria-expanded', 'false');
-        }
       }
     });
   });
