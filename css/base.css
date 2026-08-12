@@ -35,11 +35,13 @@ h6 {
 h1 {
   font-size: 2.8rem;
 }
+
 h2 {
   font-size: 2.2rem;
   text-align: center;
   margin-bottom: 1.5rem;
 }
+
 h3 {
   font-size: 1.6rem;
 }
@@ -54,6 +56,7 @@ a {
   text-decoration: none;
   transition: color var(--transition-speed);
 }
+
 a:hover {
   color: var(--color-burgundy-dark);
 }
@@ -76,6 +79,7 @@ blockquote {
   font-style: italic;
   color: var(--color-muted-text);
 }
+
 cite {
   display: block;
   margin-top: 0.5rem;
@@ -98,6 +102,7 @@ cite {
     opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94),
     transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
+
 .animate-on-scroll.visible {
   opacity: 1;
   transform: translateY(0);
@@ -118,78 +123,103 @@ cite {
 .animate-on-scroll.visible .timeline-item:nth-child(1) {
   animation-delay: 0.1s;
 }
+
 .animate-on-scroll.visible .timeline-item:nth-child(2) {
   animation-delay: 0.2s;
 }
+
 .animate-on-scroll.visible .timeline-item:nth-child(3) {
   animation-delay: 0.3s;
 }
+
 .animate-on-scroll.visible .ministry-item:nth-child(1) {
   animation-delay: 0.1s;
 }
+
 .animate-on-scroll.visible .ministry-item:nth-child(2) {
   animation-delay: 0.2s;
 }
+
 .animate-on-scroll.visible .ministry-item:nth-child(3) {
   animation-delay: 0.3s;
 }
+
 .animate-on-scroll.visible .ministry-item:nth-child(4) {
   animation-delay: 0.4s;
 }
+
 .animate-on-scroll.visible .ministry-item:nth-child(5) {
   animation-delay: 0.5s;
 }
+
 .animate-on-scroll.visible .journey-step:nth-child(1) {
   animation-delay: 0.1s;
 }
+
 .animate-on-scroll.visible .journey-step:nth-child(2) {
   animation-delay: 0.2s;
 }
+
 .animate-on-scroll.visible .journey-step:nth-child(3) {
   animation-delay: 0.3s;
 }
+
 .animate-on-scroll.visible .journey-step:nth-child(4) {
   animation-delay: 0.4s;
 }
+
 .animate-on-scroll.visible .journey-step:nth-child(5) {
   animation-delay: 0.5s;
 }
+
 .animate-on-scroll.visible .event-item:nth-child(1) {
   animation-delay: 0.1s;
 }
+
 .animate-on-scroll.visible .event-item:nth-child(2) {
   animation-delay: 0.2s;
 }
+
 .animate-on-scroll.visible .event-item:nth-child(3) {
   animation-delay: 0.3s;
 }
+
 .animate-on-scroll.visible .event-item:nth-child(4) {
   animation-delay: 0.4s;
 }
+
 .animate-on-scroll.visible .gallery-item:nth-child(1) {
   animation-delay: 0.05s;
 }
+
 .animate-on-scroll.visible .gallery-item:nth-child(2) {
   animation-delay: 0.1s;
 }
+
 .animate-on-scroll.visible .gallery-item:nth-child(3) {
   animation-delay: 0.15s;
 }
+
 .animate-on-scroll.visible .gallery-item:nth-child(4) {
   animation-delay: 0.2s;
 }
+
 .animate-on-scroll.visible .gallery-item:nth-child(5) {
   animation-delay: 0.25s;
 }
+
 .animate-on-scroll.visible .gallery-item:nth-child(6) {
   animation-delay: 0.3s;
 }
+
 .animate-on-scroll.visible .testimony-item:nth-child(1) {
   animation-delay: 0.1s;
 }
+
 .animate-on-scroll.visible .testimony-item:nth-child(2) {
   animation-delay: 0.2s;
 }
+
 .animate-on-scroll.visible .testimony-item:nth-child(3) {
   animation-delay: 0.3s;
 }
@@ -199,6 +229,7 @@ cite {
     opacity: 0;
     transform: translateY(30px);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0);
@@ -227,10 +258,12 @@ cite {
     background 0.3s;
   z-index: 999;
 }
+
 .back-to-top.visible {
   opacity: 1;
   transform: translateY(0);
 }
+
 .back-to-top:hover {
   background: var(--color-burgundy-dark);
 }
@@ -242,6 +275,7 @@ cite {
   min-height: 500px;
   overflow: hidden;
 }
+
 .hero-image .hero-bg {
   width: 100%;
   height: 100%;
@@ -250,16 +284,16 @@ cite {
   top: 0;
   left: 0;
 }
+
 .hero-image .hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    135deg,
-    rgba(37, 35, 33, 0.85) 0%,
-    rgba(100, 28, 28, 0.5) 100%
-  );
+  background: linear-gradient(135deg,
+      rgba(37, 35, 33, 0.85) 0%,
+      rgba(100, 28, 28, 0.5) 100%);
   z-index: 1;
 }
+
 .hero-content {
   position: relative;
   z-index: 2;
@@ -281,6 +315,7 @@ cite {
   justify-content: center;
   font-size: 0.9rem;
 }
+
 .placeholder-img::after {
   content: "Photo coming soon";
   display: flex;

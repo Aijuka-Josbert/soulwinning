@@ -19,17 +19,27 @@
   animation-duration: 0.32s;
   animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 ::view-transition-old(root) {
   animation-name: swm-page-out;
 }
+
 ::view-transition-new(root) {
   animation-name: swm-page-in;
 }
+
 @keyframes swm-page-out {
-  to { opacity: 0; transform: translateY(-10px); }
+  to {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
 }
+
 @keyframes swm-page-in {
-  from { opacity: 0; transform: translateY(10px); }
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
 }
 
 html {
@@ -47,6 +57,7 @@ html {
   background: transparent;
   pointer-events: none;
 }
+
 .scroll-progress-bar {
   height: 100%;
   width: 0%;
@@ -58,6 +69,7 @@ html {
 .site-header {
   transition: box-shadow 0.3s ease, padding-block 0.3s ease, background-color 0.3s ease;
 }
+
 .site-header.is-scrolled {
   box-shadow: 0 4px 24px rgba(37, 23, 19, 0.08);
   padding-block: 0.55rem;
@@ -68,6 +80,7 @@ html {
 .nav-list a {
   position: relative;
 }
+
 .nav-list a::after {
   content: "";
   position: absolute;
@@ -80,6 +93,7 @@ html {
   transform-origin: left;
   transition: transform 0.25s ease;
 }
+
 .nav-list a:hover::after,
 .nav-list a.active::after {
   transform: scaleX(1);
@@ -94,9 +108,17 @@ body.nav-open {
   .nav-primary.open {
     animation: swm-menu-drop 0.28s ease forwards;
   }
+
   @keyframes swm-menu-drop {
-    from { opacity: 0; transform: translateY(-8px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+      opacity: 0;
+      transform: translateY(-8px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 }
 
@@ -104,9 +126,11 @@ body.nav-open {
 .nav-toggle.open .hamburger:nth-child(1) {
   transform: translateY(6px) rotate(45deg);
 }
+
 .nav-toggle.open .hamburger:nth-child(2) {
   opacity: 0;
 }
+
 .nav-toggle.open .hamburger:nth-child(3) {
   transform: translateY(-6px) rotate(-45deg);
 }
@@ -121,14 +145,17 @@ body.nav-open {
     transform 0.2s ease,
     box-shadow 0.2s ease;
 }
+
 .btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 8px 20px rgba(37, 23, 19, 0.12);
 }
+
 .btn:active {
   transform: translateY(0);
   box-shadow: none;
 }
+
 .btn:focus-visible {
   outline: 2px solid var(--color-gold);
   outline-offset: 2px;
@@ -141,11 +168,13 @@ body.nav-open {
   overflow: hidden;
   border-radius: var(--border-radius);
 }
+
 .ministry-image img,
 .gallery-item img,
 .timeline-image img {
   transition: transform 0.5s ease;
 }
+
 .ministry-image:hover img,
 .gallery-item:hover img,
 .timeline-image:hover img {
@@ -159,6 +188,7 @@ body.nav-open {
 .testimony-item {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 .journey-step:hover,
 .event-item:hover {
   transform: translateY(-4px);
@@ -174,15 +204,37 @@ body.nav-open {
   opacity: 0;
   animation: swm-rise 0.7s ease forwards;
 }
-.hero-title { animation-delay: 0.05s; }
-.hero-subtitle { animation-delay: 0.2s; }
-.hero-text { animation-delay: 0.35s; }
-.hero-buttons { animation-delay: 0.5s; }
-.hero-highlight { animation-delay: 0.65s; }
+
+.hero-title {
+  animation-delay: 0.05s;
+}
+
+.hero-subtitle {
+  animation-delay: 0.2s;
+}
+
+.hero-text {
+  animation-delay: 0.35s;
+}
+
+.hero-buttons {
+  animation-delay: 0.5s;
+}
+
+.hero-highlight {
+  animation-delay: 0.65s;
+}
 
 @keyframes swm-rise {
-  from { opacity: 0; transform: translateY(16px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* ---------- Form field focus feedback ---------- */
@@ -190,6 +242,7 @@ body.nav-open {
 .form-group textarea {
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
+
 .form-group input:focus,
 .form-group textarea:focus {
   border-color: var(--color-gold);
@@ -203,12 +256,15 @@ body.nav-open {
   font-size: 0.92rem;
   min-height: 1.2em;
 }
+
 .form-status--success {
   color: #2f6b3a;
 }
+
 .form-status--error {
   color: var(--color-burgundy);
 }
+
 #contactSubmitBtn:disabled {
   opacity: 0.7;
   cursor: not-allowed;
@@ -220,6 +276,7 @@ body.nav-open {
   html {
     scroll-behavior: auto;
   }
+
   .hero-title,
   .hero-subtitle,
   .hero-text,
@@ -228,11 +285,13 @@ body.nav-open {
     animation: none;
     opacity: 1;
   }
+
   .animate-on-scroll {
     opacity: 1 !important;
     transform: none !important;
     transition: none !important;
   }
+
   .btn:hover,
   .journey-step:hover,
   .event-item:hover,
@@ -241,6 +300,7 @@ body.nav-open {
   .timeline-image:hover img {
     transform: none;
   }
+
   ::view-transition-old(root),
   ::view-transition-new(root) {
     animation: none;

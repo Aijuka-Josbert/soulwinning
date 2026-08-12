@@ -7,11 +7,14 @@
    out live from today's date using the rule stated in the
    page content.
    ========================================================== */
-document.addEventListener('DOMContentLoaded', function () {
-  const items = document.querySelectorAll('.event-item[data-recurrence]');
+document.addEventListener("DOMContentLoaded", function () {
+  const items = document.querySelectorAll(".event-item[data-recurrence]");
   if (!items.length) return;
 
-  const dateFmt = new Intl.DateTimeFormat('en-GB', { day: 'numeric', month: 'long' });
+  const dateFmt = new Intl.DateTimeFormat("en-GB", {
+    day: "numeric",
+    month: "long",
+  });
 
   function lastSundayOf(year, month) {
     // month is 0-indexed; find the last day of month, walk back to Sunday
@@ -37,18 +40,19 @@ document.addEventListener('DOMContentLoaded', function () {
       candidate = getDateForMonth(now.getFullYear(), now.getMonth() + 1);
     }
     const days = Math.round((candidate - now) / (1000 * 60 * 60 * 24));
-    const when = days === 0 ? 'Today' : days === 1 ? 'Tomorrow' : `In ${days} days`;
+    const when =
+      days === 0 ? "Today" : days === 1 ? "Tomorrow" : `In ${days} days`;
     return `Next: ${dateFmt.format(candidate)} — ${when}`;
   }
 
   items.forEach((item) => {
-    const type = item.getAttribute('data-recurrence');
-    const tag = item.querySelector('.event-next');
+    const type = item.getAttribute("data-recurrence");
+    const tag = item.querySelector(".event-next");
     if (!tag) return;
 
-    if (type === 'last-sunday') {
+    if (type === "last-sunday") {
       tag.textContent = describeUpcoming(lastSundayOf);
-    } else if (type === 'last-week') {
+    } else if (type === "last-week") {
       tag.textContent = describeUpcoming(lastWeekStartOf);
     }
   });

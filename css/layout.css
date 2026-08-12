@@ -78,6 +78,7 @@ section {
     color: var(--color-white);
     border-color: var(--color-burgundy);
 }
+
 .btn-primary:hover {
     background-color: var(--color-burgundy-dark);
     border-color: var(--color-burgundy-dark);
@@ -89,6 +90,7 @@ section {
     border-color: var(--color-burgundy);
     color: var(--color-burgundy);
 }
+
 .btn-outline:hover {
     background: var(--color-burgundy);
     color: var(--color-white);
@@ -99,6 +101,7 @@ section {
     border-color: var(--color-white);
     color: var(--color-white);
 }
+
 .btn-outline-light:hover {
     background: var(--color-white);
     color: var(--color-burgundy);

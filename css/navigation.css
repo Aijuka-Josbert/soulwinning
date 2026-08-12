@@ -1,9 +1,10 @@
 /* Add to navigation.css */
 .nav-list a.active {
-  border-bottom-color: var(--color-gold);
-  color: var(--color-burgundy);
-  font-weight: 600;
+    border-bottom-color: var(--color-gold);
+    color: var(--color-burgundy);
+    font-weight: 600;
 }
+
 .site-header {
     background: var(--color-cream);
     border-bottom: 1px solid var(--color-border);
@@ -11,7 +12,7 @@
     position: sticky;
     top: 0;
     z-index: 1000;
-    background: rgba(255,252,247,0.96);
+    background: rgba(255, 252, 247, 0.96);
     backdrop-filter: blur(4px);
 }
 
@@ -27,15 +28,18 @@
     gap: 0.5rem;
     color: var(--color-charcoal);
 }
+
 .logo-icon {
     font-size: 1.8rem;
     color: var(--color-burgundy);
 }
+
 .logo-text {
     font-family: var(--font-primary);
     line-height: 1.1;
     font-size: 1.1rem;
 }
+
 .logo-text small {
     font-size: 0.7rem;
     letter-spacing: 0.05em;
@@ -48,6 +52,7 @@
     align-items: center;
     gap: 1.5rem;
 }
+
 .nav-list {
     display: flex;
     list-style: none;
@@ -55,6 +60,7 @@
     padding: 0;
     margin: 0;
 }
+
 .nav-list a {
     color: var(--color-charcoal);
     font-size: 0.95rem;
@@ -62,11 +68,13 @@
     border-bottom: 2px solid transparent;
     transition: border-color var(--transition-speed), color var(--transition-speed);
 }
+
 .nav-list a:hover,
 .nav-list a.active {
     border-bottom-color: var(--color-gold);
     color: var(--color-burgundy);
 }
+
 .nav-list a.active {
     font-weight: 600;
 }
@@ -80,6 +88,7 @@
     cursor: pointer;
     padding: 0.4rem;
 }
+
 .nav-toggle .hamburger {
     display: block;
     width: 26px;
@@ -93,6 +102,7 @@
     .nav-toggle {
         display: flex;
     }
+
     .nav-primary {
         display: none;
         flex-direction: column;
@@ -104,20 +114,24 @@
         top: 100%;
         left: 0;
     }
+
     .nav-primary.open {
         display: flex;
     }
+
     .nav-list {
         flex-direction: column;
         width: 100%;
         gap: 0.5rem;
         padding: 0 1rem;
     }
+
     .nav-list a {
         display: block;
         padding: 0.6rem 0;
         border-bottom: none;
     }
+
     .nav-cta {
         padding: 0.5rem 1rem 1rem;
         width: 100%;
