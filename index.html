@@ -19,25 +19,25 @@
   <meta name="twitter:description" content="A warm, Bible-believing church in Mbalwa, Uganda." />
   <link rel="icon" href="assets/logo/logo.jpg" type="image/jpeg" />
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "PlaceOfWorship",
-    "name": "Soul Winning Mission Church",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Mbalwa, beside Hosanah Primary School",
-      "addressLocality": "Wakiso District",
-      "addressCountry": "UG"
-    },
-    "telephone": "+256701123781",
-    "openingHours": "Su 07:30-13:45",
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 0.37341171076685353,
-      "longitude": 32.65939149315328
-    }
-  }
-  </script>
+      {
+        "@context": "https://schema.org",
+        "@type": "PlaceOfWorship",
+        "name": "Soul Winning Mission Church",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Mbalwa, beside Hosanah Primary School",
+          "addressLocality": "Wakiso District",
+          "addressCountry": "UG"
+        },
+        "telephone": "+256701123781",
+        "openingHours": "Su 07:30-13:45",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 0.37341171076685353,
+          "longitude": 32.65939149315328
+        }
+      }
+    </script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
   <link rel="stylesheet" href="css/variables.css" />
   <link rel="stylesheet" href="css/base.css" />
@@ -46,11 +46,11 @@
   <link rel="stylesheet" href="css/navigation.css" />
   <link rel="stylesheet" href="css/pages.css" />
   <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/media.css" />
   <link rel="stylesheet" href="css/responsive.css" />
 </head>
 
 <body>
-
   <!-- ======== NAVIGATION (identical markup on every page) ======== -->
   <header class="site-header" role="banner">
     <div class="container nav-container">
@@ -73,25 +73,30 @@
           <li><a href="gallery.html">Gallery</a></li>
           <li><a href="visit.html">Visit Us</a></li>
         </ul>
-        <div class="nav-cta">
-          <a href="visit.html" class="btn btn-primary btn-sm">Plan Your Visit</a>
-        </div>
+       <div class="nav-cta">
+  <button type="button" class="btn btn-live btn-sm" disabled title="Live stream not available yet — coming soon">
+    <i class="fas fa-circle live-dot"></i> Watch Us Live
+  </button>
+  <a href="visit.html" class="btn btn-primary btn-sm">Plan Your Visit</a>
+</div>
       </nav>
     </div>
   </header>
 
   <!-- ======== HERO ======== -->
   <section class="hero" aria-label="Church hero">
-    <div class="hero-image">
+    <div class="hero-image" id="heroImage">
       <img src="assets/images/church/hero-placeholder.jpg" alt="Soul Winning Mission Church" class="hero-bg" />
       <div class="hero-overlay"></div>
     </div>
     <div class="hero-content container">
       <h1 class="hero-title">Soul Winning Mission Church</h1>
-      <p class="hero-subtitle">Knowing Christ. Pursuing Eternity. Sharing the Gospel.</p>
+      <p class="hero-subtitle">
+        Knowing Christ. Pursuing Eternity. Sharing the Gospel.
+      </p>
       <p class="hero-text">
-        A Christ-centered, Bible-believing community in Mbalwa committed to winning souls, making disciples, and growing
-        together in faith.
+        A Christ-centered, Bible-believing community in Mbalwa committed to
+        winning souls, making disciples, and growing together in faith.
       </p>
       <div class="hero-buttons">
         <a href="visit.html" class="btn btn-primary">Plan Your Visit</a>
@@ -132,10 +137,17 @@
     <div class="container">
       <div class="intro-block">
         <h2>A Christ-Centered Community</h2>
-        <p>We are a Bible-believing, born-again fellowship in Mbalwa for worship, biblical teaching, prayer, fellowship,
-          and evangelism. Our heart is to know Christ deeply and to make Him known.</p>
-        <p>From the beginning, this church has been built on the conviction that the gospel changes lives. We gather not
-          for religious routine, but for transformed living through the power of God's Word and the Holy Spirit.</p>
+        <p>
+          We are a Bible-believing, born-again fellowship in Mbalwa for
+          worship, biblical teaching, prayer, fellowship, and evangelism. Our
+          heart is to know Christ deeply and to make Him known.
+        </p>
+        <p>
+          From the beginning, this church has been built on the conviction
+          that the gospel changes lives. We gather not for religious routine,
+          but for transformed living through the power of God's Word and the
+          Holy Spirit.
+        </p>
       </div>
     </div>
   </section>
@@ -145,45 +157,76 @@
     <div class="container">
       <div class="story-header">
         <h2>Our Story</h2>
-        <p class="story-lede">What God began in Kireka in 2012 continues to grow in Mbalwa today.</p>
+        <p class="story-lede">
+          What God began in Kireka in 2012 continues to grow in Mbalwa today.
+        </p>
       </div>
       <div class="timeline">
         <div class="timeline-item">
-          <div class="timeline-marker"><span class="timeline-year">2012</span></div>
+          <div class="timeline-marker">
+            <span class="timeline-year">2012</span>
+          </div>
           <div class="timeline-content">
             <div class="timeline-image">
-              <img src="assets/images/history/kireka-placeholder.jpg" alt="Historical photo" class="placeholder-img" />
+              <div class="media-frame">
+                <img src="assets/images/history/kireka-placeholder.jpg" alt="Historical photo" loading="lazy" />
+                <div class="media-placeholder-state">
+                  <i class="fas fa-image"></i><span>Historical photo</span><small>Photo coming soon</small>
+                </div>
+              </div>
             </div>
             <div class="timeline-text">
               <h3>Beginnings in Kireka</h3>
-              <p>On <strong>25 July 2012</strong>, Pastor Ntumwa Justin gathered with three members and a simple drum.
-                That small beginning marked the birth of Soul Winning Mission Church.</p>
+              <p>
+                On <strong>25 July 2012</strong>, Pastor Ntumwa Justin
+                gathered with three members and a simple drum. That small
+                beginning marked the birth of Soul Winning Mission Church.
+              </p>
             </div>
           </div>
         </div>
         <div class="timeline-item">
-          <div class="timeline-marker"><span class="timeline-year">~2021</span></div>
+          <div class="timeline-marker">
+            <span class="timeline-year">~2021</span>
+          </div>
           <div class="timeline-content">
             <div class="timeline-image">
-              <img src="assets/images/history/mbalwa-placeholder.jpg" alt="Current location" class="placeholder-img" />
+              <div class="media-frame">
+                <img src="assets/images/history/mbalwa-placeholder.jpg" alt="Current location" loading="lazy" />
+                <div class="media-placeholder-state">
+                  <i class="fas fa-image"></i><span>Current location</span><small>Photo coming soon</small>
+                </div>
+              </div>
             </div>
             <div class="timeline-text">
               <h3>Moving to Mbalwa</h3>
-              <p>After nearly nine years of growth, the church established its current location in Mbalwa, Wakiso
-                District. We continue to develop our building and community presence.</p>
+              <p>
+                After nearly nine years of growth, the church established its
+                current location in Mbalwa, Wakiso District. We continue to
+                develop our building and community presence.
+              </p>
             </div>
           </div>
         </div>
         <div class="timeline-item">
-          <div class="timeline-marker"><span class="timeline-year">Today</span></div>
+          <div class="timeline-marker">
+            <span class="timeline-year">Today</span>
+          </div>
           <div class="timeline-content">
             <div class="timeline-image">
-              <img src="assets/images/history/growth-placeholder.jpg" alt="Church growth" class="placeholder-img" />
+              <div class="media-frame">
+                <img src="assets/images/history/growth-placeholder.jpg" alt="Church growth" loading="lazy" />
+                <div class="media-placeholder-state">
+                  <i class="fas fa-image"></i><span>Church growth</span><small>Photo coming soon</small>
+                </div>
+              </div>
             </div>
             <div class="timeline-text">
               <h3>Continuing the Mission</h3>
-              <p>Today, we remain committed to winning souls, making disciples, and serving the community in the love of
-                Christ.</p>
+              <p>
+                Today, we remain committed to winning souls, making disciples,
+                and serving the community in the love of Christ.
+              </p>
             </div>
           </div>
         </div>
@@ -199,33 +242,42 @@
     <div class="container">
       <div class="soul-winning-header">
         <h2>Winning Souls. Making Disciples.</h2>
-        <p class="soul-winning-lede">Redeeming souls from the world, discipling them, and sending them out as disciples
-          of Christ.</p>
-        <blockquote class="scripture">"Go therefore and make disciples of all nations… and behold, I am with you always,
-          to the end of the age."<br /><cite>— Matthew 28:18–20</cite></blockquote>
+        <p class="soul-winning-lede">
+          Redeeming souls from the world, discipling them, and sending them
+          out as disciples of Christ.
+        </p>
+        <blockquote class="scripture">
+          "Go therefore and make disciples of all nations… and behold, I am
+          with you always, to the end of the age."<br /><cite>— Matthew 28:18–20</cite>
+        </blockquote>
       </div>
       <div class="soul-winning-journey">
-        <div class="journey-step"><span class="step-number">1</span>
+        <div class="journey-step">
+          <span class="step-number">1</span>
           <div class="step-icon"><i class="fas fa-bullhorn"></i></div>
           <h3>Reach</h3>
           <p>Taking the gospel to Mbalwa and beyond.</p>
         </div>
-        <div class="journey-step"><span class="step-number">2</span>
+        <div class="journey-step">
+          <span class="step-number">2</span>
           <div class="step-icon"><i class="fas fa-handshake"></i></div>
           <h3>Welcome</h3>
           <p>Warmly receiving those who come.</p>
         </div>
-        <div class="journey-step"><span class="step-number">3</span>
+        <div class="journey-step">
+          <span class="step-number">3</span>
           <div class="step-icon"><i class="fas fa-bible"></i></div>
           <h3>Disciple</h3>
           <p>Grounding believers in the Word.</p>
         </div>
-        <div class="journey-step"><span class="step-number">4</span>
+        <div class="journey-step">
+          <span class="step-number">4</span>
           <div class="step-icon"><i class="fas fa-seedling"></i></div>
           <h3>Grow</h3>
           <p>Nurturing spiritual maturity.</p>
         </div>
-        <div class="journey-step"><span class="step-number">5</span>
+        <div class="journey-step">
+          <span class="step-number">5</span>
           <div class="step-icon"><i class="fas fa-send"></i></div>
           <h3>Send</h3>
           <p>Equipping disciples to go.</p>
@@ -242,44 +294,88 @@
     <div class="container">
       <h2>Church Activities</h2>
       <div class="ministry-item">
-        <div class="ministry-image"><img src="assets/images/ministries/homecells-placeholder.jpg" alt="Home Cell"
-            class="placeholder-img" /></div>
+        <div class="ministry-image">
+          <div class="media-frame">
+            <img src="assets/images/ministries/homecells-placeholder.jpg" alt="Home Cell" loading="lazy" />
+            <div class="media-placeholder-state">
+              <i class="fas fa-image"></i><span>Home Cell</span><small>Photo coming soon</small>
+            </div>
+          </div>
+        </div>
         <div class="ministry-content">
           <h3>Home Cells</h3>
-          <p>Members meet in designated homes for prayer, worship, fellowship, and spiritual growth.</p>
+          <p>
+            Members meet in designated homes for prayer, worship, fellowship,
+            and spiritual growth.
+          </p>
         </div>
       </div>
       <div class="ministry-item reverse">
-        <div class="ministry-image"><img src="assets/images/ministries/worship-placeholder.jpg" alt="Worship"
-            class="placeholder-img" /></div>
+        <div class="ministry-image">
+          <div class="media-frame">
+            <img src="assets/images/ministries/worship-placeholder.jpg" alt="Worship" loading="lazy" />
+            <div class="media-placeholder-state">
+              <i class="fas fa-image"></i><span>Worship</span><small>Photo coming soon</small>
+            </div>
+          </div>
+        </div>
         <div class="ministry-content">
           <h3>Worship</h3>
-          <p>Heartfelt praise and adoration — worship as both a lifestyle and a gathered expression of our love for God.
+          <p>
+            Heartfelt praise and adoration — worship as both a lifestyle and a
+            gathered expression of our love for God.
           </p>
         </div>
       </div>
       <div class="ministry-item">
-        <div class="ministry-image"><img src="assets/images/ministries/evangelism-placeholder.jpg" alt="Evangelism"
-            class="placeholder-img" /></div>
+        <div class="ministry-image">
+          <div class="media-frame">
+            <img src="assets/images/ministries/evangelism-placeholder.jpg" alt="Evangelism" loading="lazy" />
+            <div class="media-placeholder-state">
+              <i class="fas fa-image"></i><span>Evangelism</span><small>Photo coming soon</small>
+            </div>
+          </div>
+        </div>
         <div class="ministry-content">
           <h3>Evangelism</h3>
-          <p>The core calling of our church. We take the gospel to the streets, homes, and villages.</p>
+          <p>
+            The core calling of our church. We take the gospel to the streets,
+            homes, and villages.
+          </p>
         </div>
       </div>
       <div class="ministry-item reverse">
-        <div class="ministry-image"><img src="assets/images/ministries/prayer-placeholder.jpg" alt="Prayer"
-            class="placeholder-img" /></div>
+        <div class="ministry-image">
+          <div class="media-frame">
+            <img src="assets/images/ministries/prayer-placeholder.jpg" alt="Prayer" loading="lazy" />
+            <div class="media-placeholder-state">
+              <i class="fas fa-image"></i><span>Prayer</span><small>Photo coming soon</small>
+            </div>
+          </div>
+        </div>
         <div class="ministry-content">
           <h3>Prayer</h3>
-          <p>We are a house of prayer. Intercession, fasting, and seeking God's face are woven into our church life.</p>
+          <p>
+            We are a house of prayer. Intercession, fasting, and seeking God's
+            face are woven into our church life.
+          </p>
         </div>
       </div>
       <div class="ministry-item">
-        <div class="ministry-image"><img src="assets/images/ministries/charity-placeholder.jpg" alt="Charity"
-            class="placeholder-img" /></div>
+        <div class="ministry-image">
+          <div class="media-frame">
+            <img src="assets/images/ministries/charity-placeholder.jpg" alt="Charity" loading="lazy" />
+            <div class="media-placeholder-state">
+              <i class="fas fa-image"></i><span>Charity</span><small>Photo coming soon</small>
+            </div>
+          </div>
+        </div>
         <div class="ministry-content">
           <h3>Charity</h3>
-          <p>Serving the vulnerable — widows, orphans, and the poor — through practical care.</p>
+          <p>
+            Serving the vulnerable — widows, orphans, and the poor — through
+            practical care.
+          </p>
         </div>
       </div>
       <div class="section-cta">
@@ -293,25 +389,33 @@
     <div class="container">
       <h2>Upcoming Activities</h2>
       <div class="event-item">
-        <div class="event-date"><span class="event-month">Monthly</span><span class="event-day">Last Sunday</span></div>
+        <div class="event-date">
+          <span class="event-month">Monthly</span><span class="event-day">Last Sunday</span>
+        </div>
         <div class="event-details">
           <h3>Christian Movie Night</h3>
-          <p>Every last Sunday of the month.</p><span class="event-tag">Recurring</span>
+          <p>Every last Sunday of the month.</p>
+          <span class="event-tag">Recurring</span>
         </div>
       </div>
       <div class="event-item">
-        <div class="event-date"><span class="event-month">Monthly</span><span class="event-day">Last Week</span></div>
+        <div class="event-date">
+          <span class="event-month">Monthly</span><span class="event-day">Last Week</span>
+        </div>
         <div class="event-details">
           <h3>Evangelism Outreach</h3>
-          <p>Every last week of the month.</p><span class="event-tag">Recurring</span>
+          <p>Every last week of the month.</p>
+          <span class="event-tag">Recurring</span>
         </div>
       </div>
       <div class="event-item">
-        <div class="event-date"><span class="event-month">Quarterly</span><span class="event-day">Every 3 Months</span>
+        <div class="event-date">
+          <span class="event-month">Quarterly</span><span class="event-day">Every 3 Months</span>
         </div>
         <div class="event-details">
           <h3>Prayer Mountain</h3>
-          <p>A dedicated time of prayer and fasting.</p><span class="event-tag">Recurring</span>
+          <p>A dedicated time of prayer and fasting.</p>
+          <span class="event-tag">Recurring</span>
         </div>
       </div>
       <div class="section-cta">
@@ -324,23 +428,62 @@
   <section class="gallery-preview animate-on-scroll" aria-label="Gallery preview">
     <div class="container">
       <h2>Gallery</h2>
-      <p class="gallery-lede">Glimpses of worship, fellowship, and mission.</p>
+      <p class="gallery-lede">
+        Glimpses of worship, fellowship, and mission.
+      </p>
       <div class="gallery-grid">
-        <div class="gallery-item"><img src="assets/images/gallery/worship-placeholder.jpg" alt="Worship"
-            class="placeholder-img" /></div>
-        <div class="gallery-item"><img src="assets/images/gallery/evangelism-placeholder.jpg" alt="Evangelism"
-            class="placeholder-img" /></div>
-        <div class="gallery-item"><img src="assets/images/gallery/prayer-placeholder.jpg" alt="Prayer"
-            class="placeholder-img" /></div>
-        <div class="gallery-item"><img src="assets/images/gallery/community-placeholder.jpg" alt="Community"
-            class="placeholder-img" /></div>
-        <div class="gallery-item"><img src="assets/images/gallery/youth-placeholder.jpg" alt="Youth"
-            class="placeholder-img" /></div>
-        <div class="gallery-item"><img src="assets/images/gallery/events-placeholder.jpg" alt="Events"
-            class="placeholder-img" /></div>
+        <div class="gallery-item">
+          <div class="media-frame">
+            <img src="assets/images/gallery/worship-placeholder.jpg" alt="Worship" loading="lazy" />
+            <div class="media-placeholder-state">
+              <i class="fas fa-image"></i><span>Worship</span><small>Photo coming soon</small>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="media-frame">
+            <img src="assets/images/gallery/evangelism-placeholder.jpg" alt="Evangelism" loading="lazy" />
+            <div class="media-placeholder-state">
+              <i class="fas fa-image"></i><span>Evangelism</span><small>Photo coming soon</small>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="media-frame">
+            <img src="assets/images/gallery/prayer-placeholder.jpg" alt="Prayer" loading="lazy" />
+            <div class="media-placeholder-state">
+              <i class="fas fa-image"></i><span>Prayer</span><small>Photo coming soon</small>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="media-frame">
+            <img src="assets/images/gallery/community-placeholder.jpg" alt="Community" loading="lazy" />
+            <div class="media-placeholder-state">
+              <i class="fas fa-image"></i><span>Community</span><small>Photo coming soon</small>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="media-frame">
+            <img src="assets/images/gallery/youth-placeholder.jpg" alt="Youth" loading="lazy" />
+            <div class="media-placeholder-state">
+              <i class="fas fa-image"></i><span>Youth</span><small>Photo coming soon</small>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="media-frame">
+            <img src="assets/images/gallery/events-placeholder.jpg" alt="Events" loading="lazy" />
+            <div class="media-placeholder-state">
+              <i class="fas fa-image"></i><span>Events</span><small>Photo coming soon</small>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="gallery-cta"><a href="gallery.html" class="btn btn-outline">View full gallery <i
-            class="fas fa-arrow-right"></i></a></div>
+      <div class="gallery-cta">
+        <a href="gallery.html" class="btn btn-outline">View full gallery <i class="fas fa-arrow-right"></i></a>
+      </div>
     </div>
   </section>
 
@@ -351,10 +494,18 @@
       <div class="visit-grid">
         <div class="visit-address">
           <p><strong>Soul Winning Mission Church</strong></p>
-          <p>Mbalwa, beside Hosanah Primary School<br />Wakiso District, Uganda</p>
+          <p>
+            Mbalwa, beside Hosanah Primary School<br />Wakiso District, Uganda
+          </p>
           <div class="visit-phone">
-            <p><i class="fas fa-phone"></i> <a href="tel:+256701123781">0701 123781</a></p>
-            <p><i class="fas fa-phone"></i> <a href="tel:+256707877402">0707 877402</a></p>
+            <p>
+              <i class="fas fa-phone"></i>
+              <a href="tel:+256701123781">0701 123781</a>
+            </p>
+            <p>
+              <i class="fas fa-phone"></i>
+              <a href="tel:+256707877402">0707 877402</a>
+            </p>
           </div>
           <div class="visit-buttons">
             <a href="tel:+256701123781" class="btn btn-primary"><i class="fas fa-phone"></i> Call</a>
@@ -365,8 +516,11 @@
         </div>
         <div class="visit-map">
           <iframe src="https://www.google.com/maps?q=0.37341171076685353,32.65939149315328&z=16&output=embed"
-            width="100%" height="380" style="border:0; border-radius: 8px; box-shadow: var(--shadow-subtle);"
-            allowfullscreen="" loading="lazy" title="Location of Soul Winning Mission Church – Mbalwa"></iframe>
+            width="100%" height="380" style="
+                border: 0;
+                border-radius: 8px;
+                box-shadow: var(--shadow-subtle);
+              " allowfullscreen="" loading="lazy" title="Location of Soul Winning Mission Church – Mbalwa"></iframe>
         </div>
       </div>
     </div>
@@ -379,10 +533,18 @@
         <div class="footer-brand">
           <img src="assets/logo/logo.jpg" alt="Soul Winning Mission Church logo" class="footer-logo" />
           <h3>Soul Winning Mission Church</h3>
-          <p>Mbalwa, beside Hosanah Primary School<br />Wakiso District, Uganda</p>
+          <p>
+            Mbalwa, beside Hosanah Primary School<br />Wakiso District, Uganda
+          </p>
           <div class="footer-contact">
-            <p><i class="fas fa-phone"></i> <a href="tel:+256701123781">0701 123781</a></p>
-            <p><i class="fas fa-phone"></i> <a href="tel:+256707877402">0707 877402</a></p>
+            <p>
+              <i class="fas fa-phone"></i>
+              <a href="tel:+256701123781">0701 123781</a>
+            </p>
+            <p>
+              <i class="fas fa-phone"></i>
+              <a href="tel:+256707877402">0707 877402</a>
+            </p>
           </div>
         </div>
 
@@ -403,30 +565,66 @@
           <h4>Connect</h4>
           <!-- Real social URLs not yet provided by the church.
                Replace href="#" with the real link when available. -->
-          <p class="social-placeholder"><i class="fab fa-instagram"></i> Instagram <span class="placeholder-text">—
-              coming soon</span></p>
-          <p class="social-placeholder"><i class="fab fa-facebook"></i> Facebook <span class="placeholder-text">— coming
-              soon</span></p>
-          <p class="social-placeholder"><i class="fab fa-youtube"></i> YouTube <span class="placeholder-text">— coming
-              soon</span></p>
+          <p class="social-placeholder">
+            <i class="fab fa-instagram"></i> Instagram
+            <span class="placeholder-text">— coming soon</span>
+          </p>
+          <p class="social-placeholder">
+            <i class="fab fa-facebook"></i> Facebook
+            <span class="placeholder-text">— coming soon</span>
+          </p>
+          <p class="social-placeholder">
+            <i class="fab fa-youtube"></i> YouTube
+            <span class="placeholder-text">— coming soon</span>
+          </p>
           <a href="https://wa.me/256701123781" target="_blank" rel="noopener" class="social-live"><i
               class="fab fa-whatsapp"></i> Chat on WhatsApp</a>
           <div class="footer-callout">
             <i class="fas fa-bell"></i>
-            <span><strong>Join us this Sunday</strong><br />7:30 AM &amp; 10:00 AM</span>
+            <span><strong>Join us this Sunday</strong><br />7:30 AM &amp; 10:00
+              AM</span>
           </div>
         </div>
       </div>
 
       <div class="footer-bottom">
-        <p>&copy; 2026 Soul Winning Mission Church – Mbalwa. All rights reserved.</p>
-        <p class="footer-credit"><a href="https://github.com/Aijuka-Josbert/" target="_blank" rel="noopener">crafted by
-            Aijuka Josbert</a></p>
+        <p>
+          &copy; 2026 Soul Winning Mission Church – Mbalwa. All rights
+          reserved.
+        </p>
+        <p class="footer-credit">
+          <a href="https://github.com/Aijuka-Josbert/" target="_blank" rel="noopener">crafted by Aijuka Josbert</a>
+        </p>
       </div>
     </div>
   </footer>
 
-  <!-- Floating WhatsApp button -->
+  <!-- Live Modal -->
+    <div class="live-modal-backdrop" data-close-live></div>
+    <div class="live-modal-content" role="dialog" aria-modal="true" aria-label="Watch us live">
+      <button class="live-modal-close" data-close-live aria-label="Close">
+        <i class="fas fa-times"></i>
+      </button>
+      <h2>Watch Us Live</h2>
+      <p class="live-modal-sub">
+        Sunday services — 7:30 AM &amp; 10:00 AM (EAT)
+      </p>
+
+      <div class="live-video-frame">
+        <!-- Replace YOUR_CHANNEL_ID with the church's real YouTube channel ID -->
+        <iframe src="https://www.youtube.com/embed/live_stream?channel=YOUR_CHANNEL_ID"
+          title="Soul Winning Mission Church — Live Stream" allow="autoplay; encrypted-media; picture-in-picture"
+          allowfullscreen loading="lazy">
+        </iframe>
+      </div>
+
+      <p class="live-modal-note">
+        Not showing anything? We're likely not live right now — join us Sunday
+        at 7:30 AM or 10:00 AM, or
+        <a href="https://youtube.com/@YOUR_CHANNEL_HANDLE" target="_blank" rel="noopener">watch a past service</a>.
+      </p>
+    </div>
+*  <!-- Floating WhatsApp button -->
   <a href="https://wa.me/256701123781" target="_blank" rel="noopener" class="whatsapp-float"
     aria-label="Chat on WhatsApp">
     <i class="fab fa-whatsapp"></i>
@@ -439,6 +637,8 @@
 
   <script src="js/navigation.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/media.js"></script>
+  <script src="js/live.js"></script>
 </body>
 
 </html>

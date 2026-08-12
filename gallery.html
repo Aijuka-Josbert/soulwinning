@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="css/navigation.css" />
     <link rel="stylesheet" href="css/pages.css" />
     <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="css/media.css" />
     <link rel="stylesheet" href="css/responsive.css" />
 </head>
 
@@ -43,6 +44,10 @@
                     <li><a href="visit.html">Visit Us</a></li>
                 </ul>
                 <div class="nav-cta">
+                    <button type="button" class="btn btn-live btn-sm" disabled
+                        title="Live stream not available yet — coming soon">
+                        <i class="fas fa-circle live-dot"></i> Watch Us Live
+                    </button>
                     <a href="visit.html" class="btn btn-primary btn-sm">Plan Your Visit</a>
                 </div>
             </nav>
@@ -73,66 +78,93 @@
             <div class="gallery-grid">
                 <!-- Each item is a placeholder. Real photos replace these -->
                 <div class="gallery-item" data-category="worship">
-                    <div class="placeholder-image">
-                        <i class="fas fa-image"></i>
-                        <span>Worship</span>
-                        <small>Photo to be provided</small>
+                    <div class="media-frame">
+                        <img src="assets/images/gallery/worship-1-placeholder.jpg" alt="Worship" loading="lazy" />
+                        <div class="media-placeholder-state">
+                            <i class="fas fa-image"></i>
+                            <span>Worship</span>
+                            <small>Photo to be provided</small>
+                        </div>
                     </div>
                 </div>
                 <div class="gallery-item" data-category="worship">
-                    <div class="placeholder-image">
-                        <i class="fas fa-image"></i>
-                        <span>Worship</span>
-                        <small>Photo to be provided</small>
+                    <div class="media-frame">
+                        <img src="assets/images/gallery/worship-2-placeholder.jpg" alt="Worship" loading="lazy" />
+                        <div class="media-placeholder-state">
+                            <i class="fas fa-image"></i>
+                            <span>Worship</span>
+                            <small>Photo to be provided</small>
+                        </div>
                     </div>
                 </div>
                 <div class="gallery-item" data-category="evangelism">
-                    <div class="placeholder-image">
-                        <i class="fas fa-image"></i>
-                        <span>Evangelism</span>
-                        <small>Photo to be provided</small>
+                    <div class="media-frame">
+                        <img src="assets/images/gallery/evangelism-1-placeholder.jpg" alt="Evangelism" loading="lazy" />
+                        <div class="media-placeholder-state">
+                            <i class="fas fa-image"></i>
+                            <span>Evangelism</span>
+                            <small>Photo to be provided</small>
+                        </div>
                     </div>
                 </div>
                 <div class="gallery-item" data-category="prayer">
-                    <div class="placeholder-image">
-                        <i class="fas fa-image"></i>
-                        <span>Prayer</span>
-                        <small>Photo to be provided</small>
+                    <div class="media-frame">
+                        <img src="assets/images/gallery/prayer-placeholder.jpg" alt="Prayer" loading="lazy" />
+                        <div class="media-placeholder-state">
+                            <i class="fas fa-image"></i>
+                            <span>Prayer</span>
+                            <small>Photo to be provided</small>
+                        </div>
                     </div>
                 </div>
                 <div class="gallery-item" data-category="community">
-                    <div class="placeholder-image">
-                        <i class="fas fa-image"></i>
-                        <span>Community</span>
-                        <small>Photo to be provided</small>
+                    <div class="media-frame">
+                        <img src="assets/images/gallery/community-1-placeholder.jpg" alt="Community" loading="lazy" />
+                        <div class="media-placeholder-state">
+                            <i class="fas fa-image"></i>
+                            <span>Community</span>
+                            <small>Photo to be provided</small>
+                        </div>
                     </div>
                 </div>
                 <div class="gallery-item" data-category="youth">
-                    <div class="placeholder-image">
-                        <i class="fas fa-image"></i>
-                        <span>Youth</span>
-                        <small>Photo to be provided</small>
+                    <div class="media-frame">
+                        <img src="assets/images/gallery/youth-placeholder.jpg" alt="Youth" loading="lazy" />
+                        <div class="media-placeholder-state">
+                            <i class="fas fa-image"></i>
+                            <span>Youth</span>
+                            <small>Photo to be provided</small>
+                        </div>
                     </div>
                 </div>
                 <div class="gallery-item" data-category="events">
-                    <div class="placeholder-image">
-                        <i class="fas fa-image"></i>
-                        <span>Events</span>
-                        <small>Photo to be provided</small>
+                    <div class="media-frame">
+                        <img src="assets/images/gallery/events-placeholder.jpg" alt="Events" loading="lazy" />
+                        <div class="media-placeholder-state">
+                            <i class="fas fa-image"></i>
+                            <span>Events</span>
+                            <small>Photo to be provided</small>
+                        </div>
                     </div>
                 </div>
                 <div class="gallery-item" data-category="evangelism">
-                    <div class="placeholder-image">
-                        <i class="fas fa-image"></i>
-                        <span>Evangelism</span>
-                        <small>Photo to be provided</small>
+                    <div class="media-frame">
+                        <img src="assets/images/gallery/evangelism-2-placeholder.jpg" alt="Evangelism" loading="lazy" />
+                        <div class="media-placeholder-state">
+                            <i class="fas fa-image"></i>
+                            <span>Evangelism</span>
+                            <small>Photo to be provided</small>
+                        </div>
                     </div>
                 </div>
                 <div class="gallery-item" data-category="community">
-                    <div class="placeholder-image">
-                        <i class="fas fa-image"></i>
-                        <span>Community</span>
-                        <small>Photo to be provided</small>
+                    <div class="media-frame">
+                        <img src="assets/images/gallery/community-2-placeholder.jpg" alt="Community" loading="lazy" />
+                        <div class="media-placeholder-state">
+                            <i class="fas fa-image"></i>
+                            <span>Community</span>
+                            <small>Photo to be provided</small>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -182,6 +214,7 @@
     <script src="js/navigation.js"></script>
     <script src="js/gallery.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/media.js"></script>
 </body>
 
 </html>
