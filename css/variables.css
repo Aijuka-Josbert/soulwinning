@@ -18,6 +18,3 @@
     --shadow-subtle: 0 2px 8px rgba(0,0,0,0.04);
     --transition-speed: 0.25s;
 }
-body.nav-open {
-  overflow: hidden;
-}

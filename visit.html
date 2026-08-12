@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -6,9 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Visit Us – Soul Winning Mission Church Mbalwa</title>
     <meta name="description"
-        content="Plan your visit to Soul Winning Mission Church in Mbalwa, beside Hosanah Primary School, Wakiso District, Uganda." />
-    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        content="Plan your visit to Soul Winning Mission Church in Mbalwa, beside Hosanah Primary School, Wakiso District, Uganda. Service times, directions, and contact." />
+    <link rel="icon" href="assets/logo/logo.jpg" type="image/jpeg" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
     <link rel="stylesheet" href="css/variables.css" />
     <link rel="stylesheet" href="css/base.css" />
@@ -16,6 +15,7 @@
     <link rel="stylesheet" href="css/components.css" />
     <link rel="stylesheet" href="css/navigation.css" />
     <link rel="stylesheet" href="css/pages.css" />
+    <link rel="stylesheet" href="css/animations.css" />
     <link rel="stylesheet" href="css/responsive.css" />
 </head>
 
@@ -53,141 +53,155 @@
     <section class="page-header">
         <div class="container">
             <h1>Visit Us</h1>
-            <p class="page-lede">
-                We would love to welcome you to Soul Winning Mission Church.
-            </p>
+            <p class="page-lede">We would love to welcome you to Soul Winning Mission Church. No need to know your way
+                around — here's everything to help you find us and know what to expect.</p>
         </div>
     </section>
 
     <!-- VISIT DETAILS -->
-    <section class="visit-details">
+    <section class="visit-details animate-on-scroll">
         <div class="container">
             <div class="visit-grid">
                 <div class="visit-address">
                     <h2>Location</h2>
                     <p><strong>Soul Winning Mission Church</strong></p>
-                    <p>
-                        Mbalwa, beside Hosanah Primary School<br />Wakiso District, Uganda
-                    </p>
+                    <p>Mbalwa, beside Hosanah Primary School<br />Wakiso District, Uganda</p>
                     <div class="visit-phone">
-                        <p>
-                            <i class="fas fa-phone"></i>
-                            <a href="tel:+256701123781">0701 123781</a>
-                        </p>
-                        <p>
-                            <i class="fas fa-phone"></i>
-                            <a href="tel:+256707877402">0707 877402</a>
-                        </p>
+                        <p><i class="fas fa-phone"></i> <a href="tel:+256701123781">0701 123781</a></p>
+                        <p><i class="fas fa-phone"></i> <a href="tel:+256707877402">0707 877402</a></p>
                     </div>
                     <div class="visit-buttons">
                         <a href="tel:+256701123781" class="btn btn-primary"><i class="fas fa-phone"></i> Call the
                             Church</a>
-                        <a href="https://wa.me/256701123781" target="_blank" class="btn btn-outline"><i
+                        <a href="https://wa.me/256701123781" target="_blank" rel="noopener" class="btn btn-outline"><i
                                 class="fab fa-whatsapp"></i> WhatsApp</a>
-                        <a href="#map" class="btn btn-outline"><i class="fas fa-map-location-dot"></i> Directions</a>
+                        <a href="https://www.google.com/maps/dir/?api=1&destination=0.37341171076685353,32.65939149315328"
+                            target="_blank" rel="noopener" class="btn btn-outline"><i
+                                class="fas fa-map-location-dot"></i> Get Directions</a>
                     </div>
                 </div>
 
-                <div class="visit-map" id="map">
+                <div class="visit-map">
                     <h2>Map</h2>
-                    <div class="map-placeholder">
-                        <i class="fas fa-map-pin"></i>
-                        <span>Google Maps location to be connected</span>
-                        <!-- Replace with actual iframe when coordinates ready -->
-                    </div>
+                    <iframe src="https://www.google.com/maps?q=0.37341171076685353,32.65939149315328&z=16&output=embed"
+                        width="100%" height="360"
+                        style="border:0; border-radius: 8px; box-shadow: var(--shadow-subtle);" allowfullscreen=""
+                        loading="lazy" title="Exact location of Soul Winning Mission Church – Mbalwa"></iframe>
+                    <p class="map-note"><i class="fas fa-map-pin"></i> Beside Hosanah Primary School, Mbalwa.</p>
                 </div>
             </div>
 
-            <!-- Weekly Program -->
-            <div class="weekly-program">
-                <h2>Weekly Program</h2>
-                <div class="program-grid">
-                    <div class="program-day">
-                        <span class="day-name">Sunday</span>
-                        <span class="day-times">Morning Service 7:30 AM – 10:00 AM</span>
-                        <span class="day-times">Main Service 10:00 AM – 1:45 PM</span>
-                    </div>
-                    <div class="program-day">
-                        <span class="day-name">Home Cells</span>
-                        <span class="day-times">Various days &amp; times</span>
-                        <span class="day-times">Contact us for details</span>
-                    </div>
-                    <div class="program-day">
-                        <span class="day-name">Prayer Meetings</span>
-                        <span class="day-times">Weekly (details coming soon)</span>
-                    </div>
+            <!-- Weekly Program (full table) -->
+            <div class="weekly-program-section">
+                <h2>Church Weekly Program</h2>
+                <div class="program-table-wrapper">
+                    <table class="program-table">
+                        <thead>
+                            <tr>
+                                <th>Day</th>
+                                <th>Time</th>
+                                <th>Activity</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Wednesday</td>
+                                <td>5:00 PM – 7:00 PM</td>
+                                <td>Bible Study</td>
+                            </tr>
+                            <tr>
+                                <td>Thursday</td>
+                                <td>11:00 AM – 3:00 PM</td>
+                                <td>Intercession Altar</td>
+                            </tr>
+                            <tr>
+                                <td>Friday</td>
+                                <td>6:00 PM – 9:00 PM</td>
+                                <td>Prayer Altar</td>
+                            </tr>
+                            <tr>
+                                <td>Saturday</td>
+                                <td>3:00 PM – 6:00 PM</td>
+                                <td>Church Cleaning</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="2">Sunday</td>
+                                <td>7:30 AM – 10:00 AM</td>
+                                <td>Morning Service</td>
+                            </tr>
+                            <tr>
+                                <td>10:00 AM – 1:45 PM</td>
+                                <td>Main Service</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-            </div>
-
-            <!-- ======== CONTACT FORM (new) ======== -->
-            <div class="contact-section" style="margin-top: 3rem">
-                <h2>Send a Message</h2>
-                <p class="contact-lede">
-                    Have a prayer request, question, or want to know more? Reach out to
-                    us.
-                </p>
-                <form class="contact-form" action="#" method="POST" id="contactForm">
-                    <!-- Replace action with your form handler (e.g., Formspree) when ready -->
-                    <div class="form-group">
-                        <label for="name">Your Name</label>
-                        <input type="text" id="name" placeholder="Enter your full name" required />
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email Address</label>
-                        <input type="email" id="email" placeholder="Enter your email" required />
-                    </div>
-                    <div class="form-group">
-                        <label for="phone">Phone Number</label>
-                        <input type="tel" id="phone" placeholder="Enter your phone number" />
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" rows="5" placeholder="How can we pray for you or help you?"
-                            required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">
-                        Send Message <i class="fas fa-paper-plane"></i>
-                    </button>
-                </form>
-                <p class="form-note">
-                    <i class="fas fa-lock"></i> Your information is kept private and
-                    will only be used to respond to your message.
-                </p>
-                <!-- Note: form is currently not functional; backend needed -->
-                <p class="form-note">
-                    <i class="fas fa-lock"></i> Your information is kept private and
-                    will only be used to respond to your message.<br />
-                    <small style="opacity: 0.7">This form is powered by
-                        <a href="https://web3forms.com" target="_blank" rel="noopener">Web3Forms</a></small>
-                </p>
+                <div class="program-notes">
+                    <p><strong>Every last week of the month:</strong> Evangelism</p>
+                    <p><strong>Every last Sunday of the month:</strong> Christian Movie Night</p>
+                    <p><strong>Every 3 months:</strong> Prayer Mountain</p>
+                    <p class="counselling-phone"><i class="fas fa-phone"></i> For counselling &amp; guidance call: <a
+                            href="tel:+256744123781">0744 123 781</a> / <a href="tel:+256742624648">0742 624 648</a> /
+                        <a href="tel:+256701123781">0701 123 781</a></p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- FOOTER (fixed social links) -->
+    <!-- CONTACT FORM (Web3Forms) -->
+    <section class="contact-section animate-on-scroll" aria-label="Contact us">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <p class="contact-lede">Have a prayer request, question, or want to know more before you visit? Send us a
+                message and someone from the church will get back to you.</p>
+
+            <!--
+              WEB3FORMS INTEGRATION
+              1. Go to https://web3forms.com and create a free access key using the church's email.
+              2. Replace YOUR_ACCESS_KEY_HERE below with that key.
+              That's it — no backend/server needed, submissions arrive by email.
+            -->
+            <form id="contactForm" class="contact-form">
+                <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
+                <input type="hidden" name="subject" value="New message from the church website" />
+                <input type="checkbox" name="botcheck" class="hidden" style="display:none" />
+
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required />
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required />
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" />
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="How can we pray for you or help you?"
+                        required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" id="contactSubmitBtn">
+                    <span class="btn-label">Send Message</span> <i class="fas fa-paper-plane"></i>
+                </button>
+                <p id="contactFormStatus" class="form-status" role="status" aria-live="polite"></p>
+            </form>
+            <p class="form-note"><i class="fas fa-lock"></i> Your information is kept private and will only be used to
+                respond to your message.</p>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
     <footer class="site-footer" role="contentinfo">
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-brand">
-                    <img src="assets/logo/logo.jpg" alt="Soul Winning Mission Church logo" class="footer-logo" />
                     <h3>Soul Winning Mission Church</h3>
-                    <p>
-                        Mbalwa, beside Hosanah Primary School<br />Wakiso District, Uganda
-                    </p>
-                    <div class="footer-contact">
-                        <p>
-                            <i class="fas fa-phone"></i>
-                            <a href="tel:+256701123781">0701 123781</a>
-                        </p>
-                        <p>
-                            <i class="fas fa-phone"></i>
-                            <a href="tel:+256707877402">0707 877402</a>
-                        </p>
-                        <p>
-                            <i class="fas fa-envelope"></i>
-                            <a href="mailto:info@soulwinningmission.org">info@soulwinningmission.org</a>
-                        </p>
-                    </div>
+                    <p>Mbalwa, beside Hosanah Primary School<br />Wakiso District, Uganda</p>
+                    <p><i class="fas fa-phone"></i> <a href="tel:+256701123781">0701 123781</a> &nbsp;|&nbsp; <a
+                            href="tel:+256707877402">0707 877402</a></p>
                 </div>
                 <div class="footer-links">
                     <h4>Quick Links</h4>
@@ -202,50 +216,34 @@
                     </ul>
                 </div>
                 <div class="footer-social">
-                    <h4>Connect With Us</h4>
-                    <ul class="social-list">
-                        <li>
-                            <a href="#" class="coming-soon" aria-label="Facebook (coming soon)"><i
-                                    class="fab fa-facebook-f"></i> Facebook
-                                <span class="soon">(coming soon)</span></a>
-                        </li>
-                        <li>
-                            <a href="#" class="coming-soon" aria-label="Instagram (coming soon)"><i
-                                    class="fab fa-instagram"></i> Instagram
-                                <span class="soon">(coming soon)</span></a>
-                        </li>
-                        <li>
-                            <a href="#" class="coming-soon" aria-label="YouTube (coming soon)"><i
-                                    class="fab fa-youtube"></i> YouTube
-                                <span class="soon">(coming soon)</span></a>
-                        </li>
-                        <li>
-                            <a href="#" class="coming-soon" aria-label="WhatsApp (coming soon)"><i
-                                    class="fab fa-whatsapp"></i> WhatsApp
-                                <span class="soon">(coming soon)</span></a>
-                        </li>
-                    </ul>
-                    <div class="footer-callout">
-                        <i class="fas fa-bell"></i>
-                        <span><strong>Join us this Sunday</strong><br />7:30 AM &amp; 10:00
-                            AM</span>
-                    </div>
+                    <h4>Connect</h4>
+                    <p class="social-placeholder"><i class="fab fa-instagram"></i> Instagram <span
+                            class="placeholder-text">— coming soon</span></p>
+                    <p class="social-placeholder"><i class="fab fa-facebook"></i> Facebook <span
+                            class="placeholder-text">— coming soon</span></p>
+                    <p class="social-placeholder"><i class="fab fa-youtube"></i> YouTube <span
+                            class="placeholder-text">— coming soon</span></p>
+                    <a href="https://wa.me/256701123781" target="_blank" rel="noopener" class="social-live"><i
+                            class="fab fa-whatsapp"></i> Chat on WhatsApp</a>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>
-                    &copy; 2026 Soul Winning Mission Church – Mbalwa. All rights
-                    reserved.
-                </p>
-                <p class="footer-credit">
-                    <a href="https://github.com/Aijuka-Josbert/" target="_blank">crafted by Aijuka Josbert</a>
-                </p>
+                <p>&copy; 2026 Soul Winning Mission Church – Mbalwa. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
+    <a href="https://wa.me/256701123781" target="_blank" rel="noopener" class="whatsapp-float"
+        aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
     <script src="js/navigation.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/contact-form.js"></script>
 </body>
 
 </html>
