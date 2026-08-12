@@ -9,10 +9,7 @@
   <meta property="og:description" content="A warm, Bible-believing church in Mbalwa, Uganda. Join us for worship, prayer, and community." />
   <meta property="og:url" content="https://soulwinningmission.org" />
   <meta property="og:type" content="website" />
-  <!-- og:image removed until real hero photo exists -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Soul Winning Mission Church – Mbalwa" />
-  <meta name="twitter:description" content="A warm, Bible-believing church in Mbalwa, Uganda." />
   <link rel="icon" type="image/x-icon" href="/favicon.ico" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
   <script type="application/ld+json">
@@ -43,8 +40,13 @@
   <link rel="stylesheet" href="css/navigation.css" />
   <link rel="stylesheet" href="css/pages.css" />
   <link rel="stylesheet" href="css/responsive.css" />
+  <!-- New animations & enhancements -->
+  <link rel="stylesheet" href="css/enhancements.css" />
 </head>
 <body>
+
+  <!-- SCROLL PROGRESS BAR -->
+  <div class="scroll-progress" id="scrollProgress" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
 
   <!-- ======== NAVIGATION ======== -->
   <header class="site-header" role="banner">
@@ -128,7 +130,6 @@
         <h2>A Christ-Centered Community</h2>
         <p>We are a Bible-believing, born-again fellowship in Mbalwa for worship, biblical teaching, prayer, fellowship, and evangelism. Our heart is to know Christ deeply and to make Him known.</p>
         <p>From the beginning, this church has been built on the conviction that the gospel changes lives. We gather not for religious routine, but for transformed living through the power of God's Word and the Holy Spirit.</p>
-        <!-- Removed fake testimonial -->
       </div>
     </div>
   </section>
@@ -231,27 +232,10 @@
         <div class="footer-social">
           <h4>Connect With Us</h4>
           <ul class="social-list">
-            <li>
-              <a href="#" class="coming-soon" aria-label="Facebook (coming soon)">
-                <i class="fab fa-facebook-f"></i> Facebook <span class="soon">(coming soon)</span>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="coming-soon" aria-label="Instagram (coming soon)">
-                <i class="fab fa-instagram"></i> Instagram <span class="soon">(coming soon)</span>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="coming-soon" aria-label="YouTube (coming soon)">
-                <i class="fab fa-youtube"></i> YouTube <span class="soon">(coming soon)</span>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="coming-soon" aria-label="WhatsApp (coming soon)">
-                <i class="fab fa-whatsapp"></i> WhatsApp <span class="soon">(coming soon)</span>
-              </a>
-            </li>
-            <!-- Replace href with real URLs when provided -->
+            <li><a href="#" class="coming-soon" aria-label="Facebook (coming soon)"><i class="fab fa-facebook-f"></i> Facebook <span class="soon">(coming soon)</span></a></li>
+            <li><a href="#" class="coming-soon" aria-label="Instagram (coming soon)"><i class="fab fa-instagram"></i> Instagram <span class="soon">(coming soon)</span></a></li>
+            <li><a href="#" class="coming-soon" aria-label="YouTube (coming soon)"><i class="fab fa-youtube"></i> YouTube <span class="soon">(coming soon)</span></a></li>
+            <li><a href="#" class="coming-soon" aria-label="WhatsApp (coming soon)"><i class="fab fa-whatsapp"></i> WhatsApp <span class="soon">(coming soon)</span></a></li>
           </ul>
           <div class="footer-callout">
             <i class="fas fa-bell"></i>
@@ -266,7 +250,7 @@
     </div>
   </footer>
 
-  <!-- Floating WhatsApp button (using phone number) -->
+  <!-- Floating WhatsApp button -->
   <a href="https://wa.me/256701123781" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
     <i class="fab fa-whatsapp"></i>
   </a>
