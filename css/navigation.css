@@ -1,4 +1,5 @@
-/* Add to navigation.css */
+
+//* Add to navigation.css */
 .nav-list a.active {
     border-bottom-color: var(--color-gold);
     color: var(--color-burgundy);
@@ -79,6 +80,12 @@
     font-weight: 600;
 }
 
+.nav-cta {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
 .nav-toggle {
     display: none;
     flex-direction: column;
@@ -134,6 +141,12 @@
 
     .nav-cta {
         padding: 0.5rem 1rem 1rem;
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .nav-cta .btn {
         width: 100%;
     }
 }

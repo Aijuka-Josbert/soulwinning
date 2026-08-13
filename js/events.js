@@ -1,3 +1,4 @@
+
 /* ==========================================================
    EVENTS.JS
    Computes and displays the next real occurrence of the

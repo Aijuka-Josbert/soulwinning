@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,6 +17,7 @@
     <link rel="stylesheet" href="css/navigation.css" />
     <link rel="stylesheet" href="css/pages.css" />
     <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="css/media.css" />
     <link rel="stylesheet" href="css/responsive.css" />
 </head>
 
@@ -43,6 +45,18 @@
                     <li><a href="visit.html">Visit Us</a></li>
                 </ul>
                 <div class="nav-cta">
+                    <!-- ============================================================
+                     WATCH US LIVE — toggle point
+                     Currently OFF (disabled/test mode). To go LIVE, delete
+                     the <button> below and replace it with:
+                       <a href="live.html" class="btn btn-live btn-sm">
+                         <i class="fas fa-circle live-dot"></i> Watch Us Live
+                       </a>
+                     To take it offline again, swap back to <button disabled>.
+                     ============================================================ -->
+                    <button type="button" class="btn btn-live btn-sm" disabled title="Live stream not available yet — coming soon">
+                        <i class="fas fa-circle live-dot"></i> Watch Us Live
+                    </button>
                     <a href="visit.html" class="btn btn-primary btn-sm">Plan Your Visit</a>
                 </div>
             </nav>
@@ -63,10 +77,14 @@
             <!-- Home Cells -->
             <div class="ministry-item">
                 <div class="ministry-image">
-                    <div class="placeholder-image small">
+                    <div class="media-frame small">
+                    <img src="assets/images/ministries/homecells-placeholder.jpg" alt="Home Cell" loading="lazy" />
+                    <div class="media-placeholder-state">
                         <i class="fas fa-house-church"></i>
                         <span>Home Cell</span>
+                        <small>Photo coming soon</small>
                     </div>
+                </div>
                 </div>
                 <div class="ministry-content">
                     <h2>Home Cells</h2>
@@ -80,10 +98,14 @@
             <!-- Worship Ministry -->
             <div class="ministry-item reverse">
                 <div class="ministry-image">
-                    <div class="placeholder-image small">
+                    <div class="media-frame small">
+                    <img src="assets/images/ministries/worship-placeholder.jpg" alt="Worship" loading="lazy" />
+                    <div class="media-placeholder-state">
                         <i class="fas fa-music"></i>
                         <span>Worship</span>
+                        <small>Photo coming soon</small>
                     </div>
+                </div>
                 </div>
                 <div class="ministry-content">
                     <h2>Worship Ministry</h2>
@@ -96,10 +118,14 @@
             <!-- Evangelism / Soul Winning -->
             <div class="ministry-item">
                 <div class="ministry-image">
-                    <div class="placeholder-image small">
+                    <div class="media-frame small">
+                    <img src="assets/images/ministries/evangelism-placeholder.jpg" alt="Evangelism" loading="lazy" />
+                    <div class="media-placeholder-state">
                         <i class="fas fa-bullhorn"></i>
                         <span>Evangelism</span>
+                        <small>Photo coming soon</small>
                     </div>
+                </div>
                 </div>
                 <div class="ministry-content">
                     <h2>Evangelism / Soul Winning</h2>
@@ -113,10 +139,14 @@
             <!-- Prayer Ministry -->
             <div class="ministry-item reverse">
                 <div class="ministry-image">
-                    <div class="placeholder-image small">
+                    <div class="media-frame small">
+                    <img src="assets/images/ministries/prayer-placeholder.jpg" alt="Prayer" loading="lazy" />
+                    <div class="media-placeholder-state">
                         <i class="fas fa-hands-praying"></i>
                         <span>Prayer</span>
+                        <small>Photo coming soon</small>
                     </div>
+                </div>
                 </div>
                 <div class="ministry-content">
                     <h2>Prayer Ministry</h2>
@@ -129,10 +159,14 @@
             <!-- Charity Ministry -->
             <div class="ministry-item">
                 <div class="ministry-image">
-                    <div class="placeholder-image small">
+                    <div class="media-frame small">
+                    <img src="assets/images/ministries/charity-placeholder.jpg" alt="Charity" loading="lazy" />
+                    <div class="media-placeholder-state">
                         <i class="fas fa-hand-holding-heart"></i>
                         <span>Charity</span>
+                        <small>Photo coming soon</small>
                     </div>
+                </div>
                 </div>
                 <div class="ministry-content">
                     <h2>Charity Ministry</h2>
@@ -186,6 +220,7 @@
 
     <script src="js/navigation.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/media.js"></script>
 </body>
 
 </html>

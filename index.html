@@ -73,12 +73,25 @@
           <li><a href="gallery.html">Gallery</a></li>
           <li><a href="visit.html">Visit Us</a></li>
         </ul>
-       <div class="nav-cta">
-  <button type="button" class="btn btn-live btn-sm" disabled title="Live stream not available yet — coming soon">
-    <i class="fas fa-circle live-dot"></i> Watch Us Live
-  </button>
-  <a href="visit.html" class="btn btn-primary btn-sm">Plan Your Visit</a>
-</div>
+        <div class="nav-cta">
+          <!-- ============================================================
+               WATCH US LIVE — toggle point
+               Currently OFF (disabled/test mode). To go LIVE, delete
+               the <button> below and replace it with:
+                 <a href="live.html" class="btn btn-live btn-sm">
+                   <i class="fas fa-circle live-dot"></i> Watch Us Live
+                 </a>
+               To take it offline again, swap back to <button disabled>.
+               ============================================================ -->
+               <!-- on this -->
+                 <!-- <a href="live.html" class="btn btn-live btn-sm">
+                   <i class="fas fa-circle live-dot"></i> Watch Us Live
+                 </a> -->
+          <button type="button" class="btn btn-live btn-sm" disabled title="Live stream not available yet — coming soon">
+            <i class="fas fa-circle live-dot"></i> Watch Us Live
+          </button>
+          <a href="visit.html" class="btn btn-primary btn-sm">Plan Your Visit</a>
+        </div>
       </nav>
     </div>
   </header>
@@ -599,32 +612,7 @@
     </div>
   </footer>
 
-  <!-- Live Modal -->
-    <div class="live-modal-backdrop" data-close-live></div>
-    <div class="live-modal-content" role="dialog" aria-modal="true" aria-label="Watch us live">
-      <button class="live-modal-close" data-close-live aria-label="Close">
-        <i class="fas fa-times"></i>
-      </button>
-      <h2>Watch Us Live</h2>
-      <p class="live-modal-sub">
-        Sunday services — 7:30 AM &amp; 10:00 AM (EAT)
-      </p>
-
-      <div class="live-video-frame">
-        <!-- Replace YOUR_CHANNEL_ID with the church's real YouTube channel ID -->
-        <iframe src="https://www.youtube.com/embed/live_stream?channel=YOUR_CHANNEL_ID"
-          title="Soul Winning Mission Church — Live Stream" allow="autoplay; encrypted-media; picture-in-picture"
-          allowfullscreen loading="lazy">
-        </iframe>
-      </div>
-
-      <p class="live-modal-note">
-        Not showing anything? We're likely not live right now — join us Sunday
-        at 7:30 AM or 10:00 AM, or
-        <a href="https://youtube.com/@YOUR_CHANNEL_HANDLE" target="_blank" rel="noopener">watch a past service</a>.
-      </p>
-    </div>
-*  <!-- Floating WhatsApp button -->
+  <!-- Floating WhatsApp button -->
   <a href="https://wa.me/256701123781" target="_blank" rel="noopener" class="whatsapp-float"
     aria-label="Chat on WhatsApp">
     <i class="fab fa-whatsapp"></i>
@@ -638,7 +626,6 @@
   <script src="js/navigation.js"></script>
   <script src="js/main.js"></script>
   <script src="js/media.js"></script>
-  <script src="js/live.js"></script>
 </body>
 
 </html>

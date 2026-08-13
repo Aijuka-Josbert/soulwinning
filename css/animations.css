@@ -1,3 +1,4 @@
+
 /* ==========================================================
    ANIMATIONS & MOTION
    Restrained, purposeful motion only — no bouncing, no
@@ -271,6 +272,50 @@ body.nav-open {
   transform: none;
 }
 
+/* ---------- "Watch Us Live" ---------- */
+/* Disabled/test-mode state (a <button disabled>) */
+.btn-live {
+  background: transparent;
+  border: 1px solid var(--color-border);
+  color: var(--color-muted-text);
+}
+.btn-live:disabled {
+  cursor: not-allowed;
+  opacity: 0.75;
+}
+.btn-live:disabled:hover {
+  transform: none;
+  box-shadow: none;
+  background: transparent;
+  color: var(--color-muted-text);
+}
+.btn-live .live-dot {
+  font-size: 0.5rem;
+  color: var(--color-muted-text);
+  margin-right: 0.15rem;
+}
+
+/* Live/enabled state (an <a> once toggled on — see live.html) */
+.btn-live.is-live {
+  border-color: var(--color-burgundy);
+  color: var(--color-burgundy);
+}
+.btn-live.is-live .live-dot {
+  color: #c0392b;
+  animation: swm-live-pulse 1.6s ease-in-out infinite;
+}
+.btn-live.is-live:hover {
+  background: var(--color-burgundy);
+  color: var(--color-white);
+}
+.btn-live.is-live:hover .live-dot {
+  color: var(--color-white);
+}
+@keyframes swm-live-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.35; }
+}
+
 /* ---------- Respect reduced motion ---------- */
 @media (prefers-reduced-motion: reduce) {
   html {
@@ -303,6 +348,10 @@ body.nav-open {
 
   ::view-transition-old(root),
   ::view-transition-new(root) {
+    animation: none;
+  }
+
+  .btn-live.is-live .live-dot {
     animation: none;
   }
 }

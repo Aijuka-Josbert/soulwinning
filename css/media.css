@@ -1,3 +1,4 @@
+
 /* ==========================================================
    MEDIA.CSS
    Every photo/video slot on the site is a real <img> or
@@ -82,57 +83,68 @@
 }
 
 /* ==========================================================
-   WATCH US LIVE — modal
+   WATCH US LIVE — dedicated page (live.html)
    ========================================================== */
-.live-modal {
-  position: fixed;
-  inset: 0;
-  z-index: 2000;
-  display: none;
+.live-page-header h1 {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
 }
-.live-modal.is-open {
-  display: block;
+.live-page-header .live-dot {
+  font-size: 0.55rem;
+  color: #c0392b;
 }
-.live-modal-backdrop {
-  position: absolute;
-  inset: 0;
-  background: rgba(37, 23, 19, 0.6);
-}
-.live-modal-content {
-  position: relative;
-  max-width: 720px;
-  margin: 5vh auto;
-  background: var(--color-cream);
-  border-radius: var(--border-radius);
-  padding: 1.5rem;
-  max-height: 90vh;
-  overflow-y: auto;
-}
-.live-modal-close {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  background: transparent;
-  border: none;
-  font-size: 1.2rem;
-  color: var(--color-muted-text);
-  cursor: pointer;
-}
-.live-video-frame {
+
+.live-page-frame {
   position: relative;
   width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
   aspect-ratio: 16 / 9;
   border-radius: var(--border-radius);
   overflow: hidden;
   background: var(--color-charcoal);
-  margin: 1rem 0;
+  box-shadow: var(--shadow-subtle);
 }
-.live-video-frame iframe {
+.live-page-frame iframe {
   width: 100%;
   height: 100%;
   border: 0;
 }
-.live-modal-note {
-  font-size: 0.9rem;
+
+.live-page-info {
+  max-width: 900px;
+  margin: 2rem auto 0;
+}
+.live-page-times {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  padding: 1.2rem 1.5rem;
+  margin-bottom: 1.2rem;
+}
+.live-page-times i {
+  color: var(--color-gold);
+  font-size: 1.4rem;
+  margin-top: 0.2rem;
+}
+.live-page-times div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+.live-page-note {
+  font-size: 0.95rem;
   color: var(--color-muted-text);
+  text-align: center;
+}
+.live-page-actions {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
 }

@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
 
@@ -16,6 +17,7 @@
     <link rel="stylesheet" href="css/navigation.css" />
     <link rel="stylesheet" href="css/pages.css" />
     <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="css/media.css" />
     <link rel="stylesheet" href="css/responsive.css" />
 </head>
 
@@ -43,6 +45,18 @@
                     <li><a href="visit.html">Visit Us</a></li>
                 </ul>
                 <div class="nav-cta">
+                    <!-- ============================================================
+                     WATCH US LIVE — toggle point
+                     Currently OFF (disabled/test mode). To go LIVE, delete
+                     the <button> below and replace it with:
+                       <a href="live.html" class="btn btn-live btn-sm">
+                         <i class="fas fa-circle live-dot"></i> Watch Us Live
+                       </a>
+                     To take it offline again, swap back to <button disabled>.
+                     ============================================================ -->
+                    <button type="button" class="btn btn-live btn-sm" disabled title="Live stream not available yet — coming soon">
+                        <i class="fas fa-circle live-dot"></i> Watch Us Live
+                    </button>
                     <a href="visit.html" class="btn btn-primary btn-sm">Plan Your Visit</a>
                 </div>
             </nav>
@@ -169,10 +183,15 @@
     <section class="video-placeholder-section animate-on-scroll">
         <div class="container">
             <div class="video-block">
-                <div class="placeholder-image video-placeholder">
-                    <i class="fas fa-play-circle"></i>
-                    <span>Testimony / Event Video</span>
-                    <small>Video coming soon</small>
+                <div class="media-frame media-frame--video video-placeholder">
+                    <video controls preload="none" poster="assets/images/church/video-poster-placeholder.jpg">
+                        <source src="assets/videos/testimony-placeholder.mp4" type="video/mp4" />
+                    </video>
+                    <div class="media-placeholder-state">
+                        <i class="fas fa-play-circle"></i>
+                        <span>Testimony / Event Video</span>
+                        <small>Video coming soon</small>
+                    </div>
                 </div>
                 <div class="video-caption">
                     <p>
@@ -242,6 +261,7 @@
 
     <script src="js/navigation.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/media.js"></script>
 </body>
 
 </html>

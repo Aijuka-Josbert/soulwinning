@@ -1,3 +1,4 @@
+
 document.addEventListener("DOMContentLoaded", function () {
   // ---- SCROLL SPY (Active Nav) — only relevant on pages using in-page hash sections ----
   const hashNavLinks = document.querySelectorAll('.nav-list a[href^="#"]');
