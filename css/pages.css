@@ -265,6 +265,13 @@
   color: var(--color-muted-text);
 }
 
+.event-time p{
+  display: block;
+  font-size: 0.85rem;
+  color: var(--color-muted-text);
+  margin-top: 0.3rem;
+}
+
 .placeholder-event .event-date {
   opacity: 0.6;
 }
