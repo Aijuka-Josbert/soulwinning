@@ -512,6 +512,22 @@
   margin-right: 0.4rem;
 }
 
+
+.email-us{
+  margin-top: 0.5rem;
+  font-size: 1rem;
+}
+
+.email-us a {
+  color: var(--color-burgundy);
+  font-weight: 500;
+}
+
+.email-us i {
+  color: var(--color-gold);
+  margin-right: 0.4rem;
+}
+
 @media (max-width: 600px) {
 
   .program-table th,

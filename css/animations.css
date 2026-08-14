@@ -316,6 +316,23 @@ body.nav-open {
   50% { opacity: 0.35; }
 }
 
+/* ---------- Gallery: Videos tab gets bigger tiles than Photos ----------
+   The shared .gallery-grid is sized for photo thumbnails (180-200px).
+   Video tiles need to be legible with visible playback controls, so
+   #tab-videos gets its own, larger column sizing. */
+#tab-videos .gallery-grid {
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 1.5rem;
+}
+#tab-videos .media-frame {
+  box-shadow: var(--shadow-subtle);
+}
+
+@media (max-width: 700px) {
+  #tab-videos .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+}
 /* ---------- Respect reduced motion ---------- */
 @media (prefers-reduced-motion: reduce) {
   html {

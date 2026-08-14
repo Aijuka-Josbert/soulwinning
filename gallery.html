@@ -75,105 +75,165 @@
     <!-- GALLERY GRID (masonry-style editorial) -->
     <section class="gallery-grid-section animate-on-scroll">
         <div class="container">
-            <div class="gallery-filter">
-                <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="worship">Worship</button>
-                <button class="filter-btn" data-filter="evangelism">Evangelism</button>
-                <button class="filter-btn" data-filter="prayer">Prayer</button>
-                <button class="filter-btn" data-filter="community">Community</button>
-                <button class="filter-btn" data-filter="youth">Youth</button>
-                <button class="filter-btn" data-filter="events">Events</button>
+            <div class="tabs">
+                <button class="tab-btn active" data-tab="images">Photos</button>
+                <button class="tab-btn" data-tab="videos">Videos</button>
             </div>
 
-            <div class="gallery-grid">
-                <!-- Each item is a placeholder. Real photos replace these -->
-                <div class="gallery-item" data-category="worship">
-                    <div class="media-frame">
-                        <img src="assets/images/gallery/worship-1-placeholder.jpg" alt="Worship" loading="lazy" />
-                        <div class="media-placeholder-state">
-                            <i class="fas fa-image"></i>
-                            <span>Worship</span>
-                            <small>Photo to be provided</small>
+            <div class="tab-content active" id="tab-images">
+                <div class="gallery-filter">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="worship">Worship</button>
+                    <button class="filter-btn" data-filter="evangelism">Evangelism</button>
+                    <button class="filter-btn" data-filter="prayer">Prayer</button>
+                    <button class="filter-btn" data-filter="community">Community</button>
+                    <button class="filter-btn" data-filter="youth">Youth</button>
+                    <button class="filter-btn" data-filter="events">Events</button>
+                </div>
+
+                <div class="gallery-grid" id="imageGrid">
+                    <!-- Each item is a placeholder. Real photos replace these -->
+                    <div class="gallery-item" data-category="worship">
+                        <div class="media-frame">
+                            <img src="assets/images/gallery/worship-1-placeholder.jpg" alt="Worship" loading="lazy" />
+                            <div class="media-placeholder-state">
+                                <i class="fas fa-image"></i>
+                                <span>Worship</span>
+                                <small>Photo to be provided</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="worship">
+                        <div class="media-frame">
+                            <img src="assets/images/gallery/worship-2-placeholder.jpg" alt="Worship" loading="lazy" />
+                            <div class="media-placeholder-state">
+                                <i class="fas fa-image"></i>
+                                <span>Worship</span>
+                                <small>Photo to be provided</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="evangelism">
+                        <div class="media-frame">
+                            <img src="assets/images/gallery/evangelism-1-placeholder.jpg" alt="Evangelism" loading="lazy" />
+                            <div class="media-placeholder-state">
+                                <i class="fas fa-image"></i>
+                                <span>Evangelism</span>
+                                <small>Photo to be provided</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="prayer">
+                        <div class="media-frame">
+                            <img src="assets/images/gallery/prayer-placeholder.jpg" alt="Prayer" loading="lazy" />
+                            <div class="media-placeholder-state">
+                                <i class="fas fa-image"></i>
+                                <span>Prayer</span>
+                                <small>Photo to be provided</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="community">
+                        <div class="media-frame">
+                            <img src="assets/images/gallery/community-1-placeholder.jpg" alt="Community" loading="lazy" />
+                            <div class="media-placeholder-state">
+                                <i class="fas fa-image"></i>
+                                <span>Community</span>
+                                <small>Photo to be provided</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="youth">
+                        <div class="media-frame">
+                            <img src="assets/images/gallery/youth-placeholder.jpg" alt="Youth" loading="lazy" />
+                            <div class="media-placeholder-state">
+                                <i class="fas fa-image"></i>
+                                <span>Youth</span>
+                                <small>Photo to be provided</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="events">
+                        <div class="media-frame">
+                            <img src="assets/images/gallery/events-placeholder.jpg" alt="Events" loading="lazy" />
+                            <div class="media-placeholder-state">
+                                <i class="fas fa-image"></i>
+                                <span>Events</span>
+                                <small>Photo to be provided</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="evangelism">
+                        <div class="media-frame">
+                            <img src="assets/images/gallery/evangelism-2-placeholder.jpg" alt="Evangelism" loading="lazy" />
+                            <div class="media-placeholder-state">
+                                <i class="fas fa-image"></i>
+                                <span>Evangelism</span>
+                                <small>Photo to be provided</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="community">
+                        <div class="media-frame">
+                            <img src="assets/images/gallery/community-2-placeholder.jpg" alt="Community" loading="lazy" />
+                            <div class="media-placeholder-state">
+                                <i class="fas fa-image"></i>
+                                <span>Community</span>
+                                <small>Photo to be provided</small>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="gallery-item" data-category="worship">
-                    <div class="media-frame">
-                        <img src="assets/images/gallery/worship-2-placeholder.jpg" alt="Worship" loading="lazy" />
-                        <div class="media-placeholder-state">
-                            <i class="fas fa-image"></i>
-                            <span>Worship</span>
-                            <small>Photo to be provided</small>
+            </div>
+
+            <div class="tab-content" id="tab-videos">
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <div class="media-frame media-frame--video">
+                            <video controls preload="none" poster="assets/images/gallery/prayer-video-poster.jpg">
+                                <source src="assets/videos/crusade-prayer-time.mp4" type="video/mp4" />
+                            </video>
+                            <div class="media-placeholder-state">
+                                <i class="fas fa-play-circle"></i>
+                                <span>Prayer Time</span>
+                                <small>Video coming soon</small>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="gallery-item" data-category="evangelism">
-                    <div class="media-frame">
-                        <img src="assets/images/gallery/evangelism-1-placeholder.jpg" alt="Evangelism" loading="lazy" />
-                        <div class="media-placeholder-state">
-                            <i class="fas fa-image"></i>
-                            <span>Evangelism</span>
-                            <small>Photo to be provided</small>
+                    <div class="gallery-item">
+                        <div class="media-frame media-frame--video">
+                            <video controls preload="none" poster="assets/images/gallery/prayer-video-2-poster.jpg">
+                                <source src="assets/videos/crusade-prayer-time-2.mp4" type="video/mp4" />
+                            </video>
+                            <div class="media-placeholder-state">
+                                <i class="fas fa-play-circle"></i>
+                                <span>Prayer Time</span>
+                                <small>Video coming soon</small>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="gallery-item" data-category="prayer">
-                    <div class="media-frame">
-                        <img src="assets/images/gallery/prayer-placeholder.jpg" alt="Prayer" loading="lazy" />
-                        <div class="media-placeholder-state">
-                            <i class="fas fa-image"></i>
-                            <span>Prayer</span>
-                            <small>Photo to be provided</small>
+                    <div class="gallery-item">
+                        <div class="media-frame media-frame--video">
+                            <video controls preload="none" poster="assets/images/gallery/praise-video-poster.jpg">
+                                <source src="assets/videos/crusade-praise-moment.mp4" type="video/mp4" />
+                            </video>
+                            <div class="media-placeholder-state">
+                                <i class="fas fa-play-circle"></i>
+                                <span>Praise Moment</span>
+                                <small>Video coming soon</small>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="gallery-item" data-category="community">
-                    <div class="media-frame">
-                        <img src="assets/images/gallery/community-1-placeholder.jpg" alt="Community" loading="lazy" />
-                        <div class="media-placeholder-state">
-                            <i class="fas fa-image"></i>
-                            <span>Community</span>
-                            <small>Photo to be provided</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="gallery-item" data-category="youth">
-                    <div class="media-frame">
-                        <img src="assets/images/gallery/youth-placeholder.jpg" alt="Youth" loading="lazy" />
-                        <div class="media-placeholder-state">
-                            <i class="fas fa-image"></i>
-                            <span>Youth</span>
-                            <small>Photo to be provided</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="gallery-item" data-category="events">
-                    <div class="media-frame">
-                        <img src="assets/images/gallery/events-placeholder.jpg" alt="Events" loading="lazy" />
-                        <div class="media-placeholder-state">
-                            <i class="fas fa-image"></i>
-                            <span>Events</span>
-                            <small>Photo to be provided</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="gallery-item" data-category="evangelism">
-                    <div class="media-frame">
-                        <img src="assets/images/gallery/evangelism-2-placeholder.jpg" alt="Evangelism" loading="lazy" />
-                        <div class="media-placeholder-state">
-                            <i class="fas fa-image"></i>
-                            <span>Evangelism</span>
-                            <small>Photo to be provided</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="gallery-item" data-category="community">
-                    <div class="media-frame">
-                        <img src="assets/images/gallery/community-2-placeholder.jpg" alt="Community" loading="lazy" />
-                        <div class="media-placeholder-state">
-                            <i class="fas fa-image"></i>
-                            <span>Community</span>
-                            <small>Photo to be provided</small>
+                    <div class="gallery-item">
+                        <div class="media-frame media-frame--video">
+                            <video controls preload="none" poster="assets/images/gallery/dance-video-poster.jpg">
+                                <source src="assets/videos/crusade-dance.mp4" type="video/mp4" />
+                            </video>
+                            <div class="media-placeholder-state">
+                                <i class="fas fa-play-circle"></i>
+                                <span>Dance of Praise</span>
+                                <small>Video coming soon</small>
+                            </div>
                         </div>
                     </div>
                 </div>

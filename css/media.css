@@ -82,6 +82,27 @@
   font-size: 2.2rem;
 }
 
+/* Portrait video variant — for phone-shot vertical clips (e.g. a selfie
+   welcome message). Constrained width so it doesn't stretch full-page. */
+.media-frame.media-frame--portrait {
+  aspect-ratio: 9 / 16;
+  max-width: 360px;
+  margin: 0 auto;
+}
+
+/* Small landscape clip paired with text (e.g. pastor bio) — a bit wider
+   than the default .small (which is sized for a square photo). */
+.media-frame.leader-clip {
+  max-width: 320px;
+  margin-top: 1.25rem;
+}
+
+.media-frame media-frame--video {
+  aspect-ratio: 16 / 9;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
 /* ==========================================================
    WATCH US LIVE — dedicated page (live.html)
    ========================================================== */
