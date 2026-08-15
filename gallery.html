@@ -45,19 +45,9 @@
                     <li><a href="visit.html">Visit Us</a></li>
                 </ul>
                 <div class="nav-cta">
-                    <!-- ============================================================
-                         WATCH US LIVE — toggle point
-                         Currently OFF (disabled/test mode). To go LIVE, delete
-                         the <button> below and replace it with:
-                           <a href="live.html" class="btn btn-live btn-sm">
-                             <i class="fas fa-circle live-dot"></i> Watch Us Live
-                           </a>
-                         To take it offline again, swap back to <button disabled>.
-                         ============================================================ -->
-                    <button type="button" class="btn btn-live btn-sm" disabled
-                        title="Live stream not available yet — coming soon">
+                    <a href="live.html" class="btn btn-live btn-sm" data-live-toggle>
                         <i class="fas fa-circle live-dot"></i> Watch Us Live
-                    </button>
+                    </a>
                     <a href="visit.html" class="btn btn-primary btn-sm">Plan Your Visit</a>
                 </div>
             </nav>
@@ -319,9 +309,12 @@
     <i class="fas fa-chevron-up"></i>
   </button>
 
+  <script src="js/site-config.js"></script>
+  <script src="js/live-toggle.js"></script>
   <script src="js/navigation.js"></script>
   <script src="js/main.js"></script>
   <script src="js/media.js"></script>
+  <script src="js/gallery.js"></script>
 </body>
 
 </html>

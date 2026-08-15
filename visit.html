@@ -45,19 +45,9 @@
                     <li><a href="visit.html" class="active">Visit Us</a></li>
                 </ul>
                 <div class="nav-cta">
-                    <!-- ============================================================
-                         WATCH US LIVE — toggle point
-                         Currently OFF (disabled/test mode). To go LIVE, delete
-                         the <button> below and replace it with:
-                           <a href="live.html" class="btn btn-live btn-sm">
-                             <i class="fas fa-circle live-dot"></i> Watch Us Live
-                           </a>
-                         To take it offline again, swap back to <button disabled>.
-                         ============================================================ -->
-                    <button type="button" class="btn btn-live btn-sm" disabled
-                        title="Live stream not available yet — coming soon">
+                    <a href="live.html" class="btn btn-live btn-sm" data-live-toggle>
                         <i class="fas fa-circle live-dot"></i> Watch Us Live
-                    </button>
+                    </a>
                     <a href="visit.html" class="btn btn-primary btn-sm">Plan Your Visit</a>
                 </div>
             </nav>
@@ -90,7 +80,7 @@
                             Church</a>
                         <a href="https://wa.me/256701123781" target="_blank" rel="noopener" class="btn btn-outline"><i
                                 class="fab fa-whatsapp"></i> WhatsApp</a>
-                        <a href="https://www.google.com/maps/dir/?api=1&destination=0.37341171076685353,32.65939149315328"
+                        <a href="https://www.google.com/maps/dir/?api=1&destination=Soul+Winning+Mission+Church%2C+Mbalwa&destination_place_id=ChIJc4N0EY65fRcRHXAkI4ZhvBI"
                             target="_blank" rel="noopener" class="btn btn-outline"><i
                                 class="fas fa-map-location-dot"></i> Get Directions</a>
                     </div>
@@ -98,7 +88,7 @@
 
                 <div class="visit-map">
                     <h2>Map</h2>
-                    <iframe src="https://www.google.com/maps?q=0.37341171076685353,32.65939149315328&z=16&output=embed"
+                    <iframe src="https://www.google.com/maps?q=Soul+Winning+Mission+Church,+Mbalwa,+Uganda&z=16&output=embed"
                         width="100%" height="360"
                         style="border:0; border-radius: 8px; box-shadow: var(--shadow-subtle);" allowfullscreen=""
                         loading="lazy" title="Exact location of Soul Winning Mission Church – Mbalwa"></iframe>
@@ -300,6 +290,8 @@
     <i class="fas fa-chevron-up"></i>
   </button>
 
+  <script src="js/site-config.js"></script>
+  <script src="js/live-toggle.js"></script>
   <script src="js/navigation.js"></script>
   <script src="js/main.js"></script>
   <script src="js/media.js"></script>

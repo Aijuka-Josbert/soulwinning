@@ -44,7 +44,7 @@
                     <li><a href="visit.html">Visit Us</a></li>
                 </ul>
                 <div class="nav-cta">
-                    <a href="live.html" class="btn btn-live btn-sm is-live">
+                    <a href="live.html" class="btn btn-live btn-sm" data-live-toggle>
                         <i class="fas fa-circle live-dot"></i> Watch Us Live
                     </a>
                     <a href="visit.html" class="btn btn-primary btn-sm">Plan Your Visit</a>
@@ -65,18 +65,9 @@
     <section class="live-page-section animate-on-scroll">
         <div class="container">
             <div class="live-page-frame">
-                <!-- ============================================================
-                     GO-LIVE SETUP
-                     1. Replace YOUR_CHANNEL_ID below with the church's real
-                        YouTube channel ID (found in YouTube Studio > Settings
-                        > Channel > Advanced settings).
-                     2. Replace YOUR_CHANNEL_HANDLE with the channel's @handle.
-                     YouTube automatically shows its own "not currently live"
-                     message inside this player when nothing is streaming —
-                     no extra code is needed for that state.
-                     ============================================================ -->
+                <!-- Live stream configured for channel ID UCMNkX9NFjclDT6Yav2FtQaA -->
                 <iframe
-                    src="https://www.youtube.com/embed/live_stream?channel=YOUR_CHANNEL_ID"
+                    src="https://www.youtube.com/embed/live_stream?channel=UCMNkX9NFjclDT6Yav2FtQaA"
                     title="Soul Winning Mission Church — Live Stream"
                     allow="autoplay; encrypted-media; picture-in-picture"
                     allowfullscreen
@@ -96,7 +87,7 @@
                 <p class="live-page-note">
                     Not showing anything right now? We're likely between services —
                     join us Sunday at 7:30 AM or 10:00 AM (East Africa Time), or
-                    <a href="https://youtube.com/@YOUR_CHANNEL_HANDLE" target="_blank" rel="noopener">watch a past service on our YouTube channel</a>.
+                    <a href="https://youtube.com/@soulwinningmissionchurch" target="_blank" rel="noopener">watch a past service on our YouTube channel</a>.
                 </p>
                 <div class="live-page-actions">
                     <a href="visit.html" class="btn btn-outline"><i class="fas fa-map-location-dot"></i> Plan an In-Person Visit</a>
@@ -184,6 +175,8 @@
     <i class="fas fa-chevron-up"></i>
   </button>
 
+  <script src="js/site-config.js"></script>
+  <script src="js/live-toggle.js"></script>
   <script src="js/navigation.js"></script>
   <script src="js/main.js"></script>
   <script src="js/media.js"></script>

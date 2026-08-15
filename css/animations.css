@@ -273,17 +273,18 @@ body.nav-open {
 }
 
 /* ---------- "Watch Us Live" ---------- */
-/* Disabled/test-mode state (a <button disabled>) */
+/* Off state — JS (live-toggle.js) sets aria-disabled="true" when
+   SITE_CONFIG.liveStreamEnabled is false */
 .btn-live {
   background: transparent;
   border: 1px solid var(--color-border);
   color: var(--color-muted-text);
 }
-.btn-live:disabled {
+.btn-live[aria-disabled="true"] {
   cursor: not-allowed;
   opacity: 0.75;
 }
-.btn-live:disabled:hover {
+.btn-live[aria-disabled="true"]:hover {
   transform: none;
   box-shadow: none;
   background: transparent;
