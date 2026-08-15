@@ -6,5 +6,5 @@
 const SITE_CONFIG = {
   // true  = "Watch Us Live" is clickable and goes to live.html
   // false = "Watch Us Live" is greyed out / not clickable
-  liveStreamEnabled: false,
+  liveStreamEnabled: true,
 };
