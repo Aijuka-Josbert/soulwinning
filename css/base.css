@@ -328,3 +328,40 @@ cite {
   color: var(--color-muted-text);
   font-size: 0.9rem;
 }
+/* ----- Skip to main content ----- */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  z-index: 9999;
+  background: var(--color-burgundy);
+  color: var(--color-white);
+  padding: 0.75rem 1.5rem;
+  border-radius: 0 0 var(--border-radius) 0;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.skip-link:focus-visible {
+  left: 0;
+  top: 0;
+  width: auto;
+  height: auto;
+  overflow: visible;
+  outline: 3px solid var(--color-gold);
+  outline-offset: 0;
+}
+
+/* ----- Ensure all focusable elements have clear indicators ----- */
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid var(--color-gold);
+  outline-offset: 2px;
+}

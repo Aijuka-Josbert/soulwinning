@@ -1,8 +1,7 @@
-
 :root {
     --color-burgundy: #641C1C;
     --color-burgundy-dark: #431313;
-    --color-gold: #B08A45;
+    --color-gold: #A67C3A;  /* was #B08A45 – now darker, passes AA */
     --color-ivory: #F8F5EF;
     --color-cream: #FFFCF7;
     --color-charcoal: #252321;

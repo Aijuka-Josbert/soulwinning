@@ -84,7 +84,10 @@ document.addEventListener("DOMContentLoaded", function () {
   // ---- SCROLL PROGRESS BAR ----
   const progressWrap = document.createElement("div");
   progressWrap.className = "scroll-progress";
-  progressWrap.setAttribute("aria-hidden", "true");
+  progressWrap.setAttribute("role", "status");
+  progressWrap.setAttribute("aria-atomic", "true");
+  progressWrap.setAttribute("aria-live", "polite");
+  progressWrap.setAttribute("aria-hidden", "true"); // hides it from screen readers (it's decorative)
   const progressBar = document.createElement("div");
   progressBar.className = "scroll-progress-bar";
   progressWrap.appendChild(progressBar);

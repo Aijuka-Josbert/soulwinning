@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,9 +9,9 @@
     <meta name="description"
         content="Christian Movie Night, Evangelism, Prayer Mountain and more events at Soul Winning Mission Church, Mbalwa." />
     <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
-      <link rel="preconnect" href="https://www.youtube.com" />
-      <link rel="preconnect" href="https://www.google.com" />
-      <link rel="dns-prefetch" href="https://api.web3forms.com" />
+    <link rel="preconnect" href="https://www.youtube.com" />
+    <link rel="preconnect" href="https://www.google.com" />
+    <link rel="dns-prefetch" href="https://api.web3forms.com" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
     <link rel="stylesheet" href="css/variables.css" />
     <link rel="stylesheet" href="css/base.css" />
@@ -26,8 +25,11 @@
 </head>
 
 <body>
+    <!-- SKIP LINK -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
     <!-- NAVIGATION -->
-    <header class="site-header" role="banner">
+    <header class="site-header">
         <div class="container nav-container">
             <div class="logo">
                 <a href="index.html">
@@ -38,7 +40,7 @@
             <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
                 <span class="hamburger"></span><span class="hamburger"></span><span class="hamburger"></span>
             </button>
-            <nav class="nav-primary" id="navPrimary" role="navigation" aria-label="Main navigation">
+            <nav class="nav-primary" id="navPrimary" aria-label="Main navigation">
                 <ul class="nav-list">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
@@ -58,171 +60,166 @@
         </div>
     </header>
 
-    <!-- PAGE HEADER -->
-    <section class="page-header">
+    <!-- MAIN CONTENT -->
+    <main id="main-content">
+        <!-- PAGE HEADER -->
+        <section class="page-header">
+            <div class="container">
+                <h1>Upcoming Events</h1>
+                <p class="page-lede">Gather with us as we worship, pray, and reach our community.</p>
+            </div>
+        </section>
+
+        <!-- EVENTS LISTING -->
+        <section class="events-listing animate-on-scroll">
+            <div class="container">
+                <!-- Recurring events -->
+                <div class="event-item" data-recurrence="last-sunday">
+                    <div class="event-date">
+                        <span class="event-month">Monthly</span>
+                        <span class="event-day">Last Sunday</span>
+                    </div>
+                    <div class="event-details">
+                        <h3>Christian Movie Night</h3>
+                        <p>Every last Sunday of the month. A time for fellowship and inspiration through Christian films.
+                        </p>
+                        <span class="event-time"><p> <i>From 6:00 PM - 9: 00 PM</i></p></span>
+                        <span class="event-tag">Recurring</span>
+                        <span class="event-next"></span>
+                    </div>
+                </div>
+
+                <div class="event-item" data-recurrence="last-week">
+                    <div class="event-date">
+                        <span class="event-month">Monthly</span>
+                        <span class="event-day">Last Week</span>
+                    </div>
+                    <div class="event-details">
+                        <h3>Evangelism Outreach</h3>
+                        <p>Every last week of the month. Join us as we take the gospel to the streets of Mbalwa and
+                            surrounding areas.</p>
+                        <span class="event-tag">Recurring</span>
+                        <span class="event-next"></span>
+                    </div>
+                </div>
+
+                <div class="event-item">
+                    <div class="event-date">
+                        <span class="event-month">Quarterly</span>
+                        <span class="event-day">Every 3 Months</span>
+                    </div>
+                    <div class="event-details">
+                        <h3>Prayer Mountain</h3>
+                        <p>A dedicated time of prayer, fasting, and seeking God's direction for the church and community.
+                        </p>
+                        <span class="event-tag">Recurring</span>
+                    </div>
+                </div>
+
+                <!-- Placeholder for future events -->
+                <div class="event-item placeholder-event">
+                    <div class="event-date">
+                        <span class="event-month">TBA</span>
+                        <span class="event-day">—</span>
+                    </div>
+                    <div class="event-details">
+                        <h3>Conference / Special Service</h3>
+                        <p>Details to be announced. Watch this space for upcoming conferences, worship nights, and youth
+                            events.</p>
+                        <span class="event-tag">Coming soon</span>
+                    </div>
+                </div>
+
+                <div class="event-item placeholder-event">
+                    <div class="event-date">
+                        <span class="event-month">TBA</span>
+                        <span class="event-day">—</span>
+                    </div>
+                    <div class="event-details">
+                        <h3>Bible Study Series</h3>
+                        <p>Deep dive into Scripture. More information from the church coming soon.</p>
+                        <span class="event-tag">Coming soon</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
         <div class="container">
-            <h1>Upcoming Events</h1>
-            <p class="page-lede">Gather with us as we worship, pray, and reach our community.</p>
-        </div>
-    </section>
-
-    <!-- EVENTS LISTING -->
-    <section class="events-listing animate-on-scroll">
-        <div class="container">
-            <!-- Recurring events -->
-            <div class="event-item" data-recurrence="last-sunday">
-                <div class="event-date">
-                    <span class="event-month">Monthly</span>
-                    <span class="event-day">Last Sunday</span>
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>Soul Winning Mission Church</h3>
+                    <p>Mbalwa, beside Hosanah Primary School<br />Wakiso District, Uganda</p>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-phone"></i> <a href="tel:+256701123781">0701 123781</a></p>
+                        <p><i class="fas fa-phone"></i> <a href="tel:+256707877402">0707 877402</a></p>
+                    </div>
                 </div>
-                <div class="event-details">
-                    <h3>Christian Movie Night</h3>
-                    <p>Every last Sunday of the month. A time for fellowship and inspiration through Christian films.
+
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="ministries.html">Ministries</a></li>
+                        <li><a href="soul-winning.html">Soul Winning</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="visit.html">Visit Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-social">
+                    <h4>Connect</h4>
+                    <p class="social-placeholder">
+                        <i class="fab fa-instagram"></i>
+                        <span class="placeholder-text"><a href="https://www.instagram.com/soulwinningmissionchurch/"
+                                target="_blank" rel="noopener">Instagram</a></span>
                     </p>
-                    <span class="event-time"><p> <i>From 6:00 PM - 9: 00 PM</i></p></span>
-                    <span class="event-tag">Recurring</span>
-                    <span class="event-next"></span>
-                </div>
-            </div>
-
-            <div class="event-item" data-recurrence="last-week">
-                <div class="event-date">
-                    <span class="event-month">Monthly</span>
-                    <span class="event-day">Last Week</span>
-                </div>
-                <div class="event-details">
-                    <h3>Evangelism Outreach</h3>
-                    <p>Every last week of the month. Join us as we take the gospel to the streets of Mbalwa and
-                        surrounding areas.</p>
-                    <span class="event-tag">Recurring</span>
-                    <span class="event-next"></span>
-                </div>
-            </div>
-
-            <div class="event-item">
-                <div class="event-date">
-                    <span class="event-month">Quarterly</span>
-                    <span class="event-day">Every 3 Months</span>
-                </div>
-                <div class="event-details">
-                    <h3>Prayer Mountain</h3>
-                    <p>A dedicated time of prayer, fasting, and seeking God's direction for the church and community.
+                    <p>
+                        <i class="fab fa-facebook"></i>
+                        <a href="https://www.facebook.com/share/1DfsdftwXT/" target="_blank" rel="noopener">Facebook</a>
                     </p>
-                    <span class="event-tag">Recurring</span>
+                    <p class="social-placeholder">
+                        <i class="fab fa-youtube"></i>
+                        <span class="placeholder-text"> <a
+                                href="https://youtube.com/@soulwinningmissionchurch?si=pbnTslj-R-ijxtld" target="_blank"
+                                rel="noopener">YouTube</a></span>
+                    </p>
+                    <a href="https://wa.me/256701123781" target="_blank" rel="noopener" class="social-live"><i
+                            class="fab fa-whatsapp"></i> Chat on WhatsApp</a>
+                    <div class="footer-callout">
+                        <i class="fas fa-bell"></i>
+                        <span><strong>Join us this Sunday</strong><br />7:30 AM &amp; 10:00 AM</span>
+                    </div>
                 </div>
             </div>
 
-            <!-- Placeholder for future events -->
-            <div class="event-item placeholder-event">
-                <div class="event-date">
-                    <span class="event-month">TBA</span>
-                    <span class="event-day">—</span>
-                </div>
-                <div class="event-details">
-                    <h3>Conference / Special Service</h3>
-                    <p>Details to be announced. Watch this space for upcoming conferences, worship nights, and youth
-                        events.</p>
-                    <span class="event-tag">Coming soon</span>
-                </div>
-            </div>
-
-            <div class="event-item placeholder-event">
-                <div class="event-date">
-                    <span class="event-month">TBA</span>
-                    <span class="event-day">—</span>
-                </div>
-                <div class="event-details">
-                    <h3>Bible Study Series</h3>
-                    <p>Deep dive into Scripture. More information from the church coming soon.</p>
-                    <span class="event-tag">Coming soon</span>
-                </div>
+            <div class="footer-bottom">
+                <p>
+                    &copy; 2026 Soul Winning Mission Church – Mbalwa. All rights reserved.
+                    <br>
+                    <a href="privacy-policy.html">Privacy Policy</a> | <a href="terms.html">Terms &amp; Conditions</a>
+                </p>
+                <p class="footer-credit">
+                    <a href="https://github.com/Aijuka-Josbert/" target="_blank" rel="noopener">crafted by Aijuka Josbert</a>
+                </p>
             </div>
         </div>
-    </section>
+    </footer>
 
-  <!-- ======== FOOTER ======== -->
-  <footer class="site-footer" role="contentinfo">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <!-- <img src="assets/logo/logo.jpg" alt="Soul Winning Mission Church logo" class="footer-logo" /> -->
-          <h3>Soul Winning Mission Church</h3>
-          <p>
-            Mbalwa, beside Hosanah Primary School<br />Wakiso District, Uganda
-          </p>
-          <div class="footer-contact">
-            <p>
-              <i class="fas fa-phone"></i>
-              <a href="tel:+256701123781">0701 123781</a>
-            </p>
-            <p>
-              <i class="fas fa-phone"></i>
-              <a href="tel:+256707877402">0707 877402</a>
-            </p>
-          </div>
-        </div>
+    <!-- Back to top -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
 
-        <div class="footer-links">
-          <h4>Quick Links</h4>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="ministries.html">Ministries</a></li>
-            <li><a href="soul-winning.html">Soul Winning</a></li>
-            <li><a href="events.html">Events</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="visit.html">Visit Us</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-social">
-          <h4>Connect</h4>
-          <!-- Real social URLs not yet provided by the church.
-               Replace href="#" with the real link when available. -->
-          <p class="social-placeholder">
-            <i class="fab fa-instagram"></i>
-            <span class="placeholder-text"><a href="https://www.instagram.com/soulwinningmissionchurch/" target="_blank" rel="noopener">Instagram</a></span>
-          </p>
-          <p class="social-placeholder">
-            <i class="fab fa-facebook"></i> Facebook
-            <span class="placeholder-text">— coming soon</span>
-          </p>
-          <p class="social-placeholder">
-            <i class="fab fa-youtube"></i>
-            <span class="placeholder-text"> <a href="https://youtube.com/@soulwinningmissionchurch?si=pbnTslj-R-ijxtld" target="_blank" rel="noopener">YouTube</a></span>
-          </p>
-          <a href="https://wa.me/256701123781" target="_blank" rel="noopener" class="social-live"><i
-              class="fab fa-whatsapp"></i> Chat on WhatsApp</a>
-          <div class="footer-callout">
-            <i class="fas fa-bell"></i>
-            <span><strong>Join us this Sunday</strong><br />7:30 AM &amp; 10:00
-              AM</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="footer-bottom">
-        <p>
-          &copy; 2026 Soul Winning Mission Church – Mbalwa. All rights
-          reserved.
-        </p>
-        <p class="footer-credit">
-          <a href="https://github.com/Aijuka-Josbert/" target="_blank" rel="noopener">crafted by Aijuka Josbert</a>
-        </p>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Back to top -->
-  <button id="backToTop" class="back-to-top" aria-label="Back to top">
-    <i class="fas fa-chevron-up"></i>
-  </button>
-
-  <script src="js/site-config.js"></script>
-  <script src="js/live-toggle.js"></script>
-  <script src="js/navigation.js"></script>
-  <script src="js/main.js"></script>
-  <script src="js/media.js"></script>
+    <script src="js/site-config.js"></script>
+    <script src="js/live-toggle.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/media.js"></script>
 </body>
 
 </html>
