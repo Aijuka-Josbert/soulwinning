@@ -33,6 +33,15 @@ document.addEventListener("DOMContentLoaded", function () {
     statusEl.classList.remove("form-status--error", "form-status--success");
 
     try {
+      // Personalize the subject with the sender's name — a specific,
+      // human-sounding subject is both friendlier to read and less likely
+      // to be pattern-matched as a generic/bulk form submission.
+      const nameField = form.querySelector('[name="name"]');
+      const subjectField = form.querySelector('[name="subject"]');
+      if (nameField && nameField.value && subjectField) {
+        subjectField.value = `New message from ${nameField.value} — Soul Winning Mission Church website`;
+      }
+
       const formData = new FormData(form);
       const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",

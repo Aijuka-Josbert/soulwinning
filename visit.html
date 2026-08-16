@@ -172,13 +172,15 @@
                 message and someone from the church will get back to you.</p>
 
             <!--
-              WEB3FORMS INTEGRATION
-              1. Go to https://web3forms.com and create a free access key using the church's email.
-              2. Replace YOUR_ACCESS_KEY_HERE below with that key in contact-form.js.
+              WEB3FORMS INTEGRATION — configured with the real access key below.
+              If this key ever needs to change, get a new one at
+              https://web3forms.com and replace the value= here directly
+              (not in contact-form.js — that file just reads whatever is here).
             -->
             <form id="contactForm" class="contact-form">
-                <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
+                <input type="hidden" name="access_key" value="abbd109a-5cf5-4135-841f-d9d57419dc91" />
                 <input type="hidden" name="subject" value="New message from the church website" />
+                <input type="hidden" name="from_name" value="Soul Winning Mission Church Website" />
                 <input type="checkbox" name="botcheck" class="hidden" style="display:none" />
 
                 <div class="form-group">
