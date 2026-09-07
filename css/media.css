@@ -110,10 +110,11 @@
     font-size: 0.78rem;
   }
 }
+
 /* Size variant used for small circular/leader photos */
 .media-frame.small {
   aspect-ratio: 1 / 1;
-  max-width: 100%;
+  max-width: 220px;
 }
 .media-frame.small .photo-caption {
   font-size: 0.72rem;

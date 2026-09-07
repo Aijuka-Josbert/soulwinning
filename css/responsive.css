@@ -40,6 +40,19 @@
         gap: 0.5rem;
     }
 
+    .timeline-content {
+        flex-direction: column;
+    }
+
+    .timeline-image {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+
+    .timeline-image .media-frame {
+        aspect-ratio: 16 / 10;
+    }
+
     .timeline-marker {
         flex: 0 0 auto;
         text-align: left;

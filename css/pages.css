@@ -120,8 +120,8 @@
   }
 
   .ministry-image .media-frame.small {
-    max-width: 250%;
-    width: 200%;
+    max-width: 100%;
+    width: 100%;
     aspect-ratio: 16 / 10;
   }
 
@@ -709,7 +709,7 @@ section:nth-of-type(odd) {
 }
 
 .timeline-image {
-  flex: 0 0 120px;
+  flex: 0 0 240px;
 }
 
 .timeline-text {
@@ -1040,6 +1040,19 @@ section:nth-of-type(odd) {
   .timeline-item {
     flex-direction: column;
     gap: 0.5rem;
+  }
+
+  .timeline-content {
+    flex-direction: column;
+  }
+
+  .timeline-image {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+
+  .timeline-image .media-frame {
+    aspect-ratio: 16 / 10;
   }
 
   .ministry-item,
