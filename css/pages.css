@@ -118,6 +118,17 @@
     flex: 0 0 auto;
     width: 100%;
   }
+
+  .ministry-image .media-frame.small {
+    max-width: 250%;
+    width: 200%;
+    aspect-ratio: 16 / 10;
+  }
+
+  .ministry-image .media-frame.small .photo-caption {
+    font-size: 0.85rem;
+    padding: 1.1rem 1rem 0.7rem;
+  }
 }
 
 /* Soul Winning page */
@@ -521,6 +532,8 @@
 .email-us a {
   color: var(--color-burgundy);
   font-weight: 500;
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 .email-us i {
@@ -1038,6 +1051,17 @@ section:nth-of-type(odd) {
   .ministry-image {
     flex: 0 0 auto;
     width: 100%;
+  }
+
+  .ministry-image .media-frame.small {
+    max-width: 100%;
+    width: 100%;
+    aspect-ratio: 16 / 10;
+  }
+
+  .ministry-image .media-frame.small .photo-caption {
+    font-size: 0.85rem;
+    padding: 1.1rem 1rem 0.7rem;
   }
 
   .visit-grid {

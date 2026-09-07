@@ -12,12 +12,24 @@ html {
   scroll-behavior: smooth;
 }
 
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   font-family: var(--font-body);
   background-color: var(--color-cream);
   color: var(--color-charcoal);
   line-height: 1.7;
   font-size: 1.0625rem;
+  overflow-wrap: break-word;
+}
+
+img,
+video {
+  max-width: 100%;
 }
 
 h1,
