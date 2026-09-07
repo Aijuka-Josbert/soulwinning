@@ -178,6 +178,81 @@
             </div>
         </section>
 
+        <!-- PRAYER REQUEST -->
+        <section class="contact-section prayer-request-section animate-on-scroll" aria-label="Submit a prayer request">
+            <div class="container">
+                <h2>Submit a Prayer Request</h2>
+                <p class="contact-lede">
+                    Whatever you are walking through, you don't have to carry it alone.
+                    Share it here and our prayer team will lift it up before God on your behalf.
+                </p>
+
+                <form id="prayerRequestForm" class="contact-form" novalidate>
+                    <input type="hidden" name="access_key" value="abbd109a-5cf5-4135-841f-d9d57419dc91" />
+                    <input type="hidden" name="subject" data-subject-prefix="Prayer Request" value="New prayer request from the church website" />
+                    <input type="hidden" name="from_name" value="Soul Winning Mission Church Website" />
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none" />
+
+                    <!-- Name -->
+                    <div class="form-group" data-field="name">
+                        <label for="prayerName">Your Name <span class="required-star">*</span></label>
+                        <input type="text" id="prayerName" name="name" placeholder="Enter your full name" required
+                            aria-required="true" pattern="[A-Za-z\s\-']+" />
+                        <span class="field-error"></span>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="form-group" data-field="email">
+                        <label for="prayerEmail">Email Address <span class="required-star">*</span></label>
+                        <input type="email" id="prayerEmail" name="email" placeholder="Enter your email" required
+                            aria-required="true" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" />
+                        <span class="field-error"></span>
+                    </div>
+
+                    <!-- Prayer Request -->
+                    <div class="form-group" data-field="message">
+                        <label for="prayerMessage">Your Prayer Request <span class="required-star">*</span></label>
+                        <textarea id="prayerMessage" name="message" rows="5"
+                            placeholder="Share what's on your heart — as much or as little as you'd like" required
+                            aria-required="true" minlength="5"></textarea>
+                        <span class="field-error"></span>
+                    </div>
+
+                    <!-- Keep confidential checkbox -->
+                    <div class="form-group checkbox-group" data-field="confidential">
+                        <input type="checkbox" id="prayerConfidential" name="confidential" value="Yes, keep this confidential" />
+                        <label for="prayerConfidential">
+                            Please keep my request confidential, shared only with the prayer team.
+                        </label>
+                    </div>
+
+                    <!-- Privacy & Terms checkbox (mandatory) -->
+                    <div class="form-group checkbox-group" data-field="agree">
+                        <input type="checkbox" id="prayerAgree" name="agree" required aria-required="true" />
+                        <label for="prayerAgree">
+                            I agree to the
+                            <a href="privacy-policy.html" target="_blank">Privacy Policy</a>
+                            and
+                            <a href="terms.html" target="_blank">Terms &amp; Conditions</a>.
+                            <span class="required-star">*</span>
+                        </label>
+                        <span class="field-error"></span>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" id="prayerSubmitBtn">
+                        <span class="btn-label">Send Prayer Request</span>
+                        <i class="fas fa-hands-praying"></i>
+                    </button>
+                    <p class="form-status" role="status" aria-live="polite"></p>
+                </form>
+                <p class="form-note">
+                    <i class="fas fa-lock"></i> Your request is kept private and shared only
+                    with our prayer team. By submitting, you agree to our
+                    <a href="privacy-policy.html">Privacy Policy</a>.
+                </p>
+            </div>
+        </section>
+
         <!-- VIDEO PLACEHOLDER -->
         <section class="video-placeholder-section animate-on-scroll">
             <div class="container">
@@ -278,6 +353,7 @@
     <script src="js/navigation.js"></script>
     <script src="js/main.js"></script>
     <script src="js/media.js"></script>
+    <script src="js/contact-form.js"></script>
 </body>
 
 </html>

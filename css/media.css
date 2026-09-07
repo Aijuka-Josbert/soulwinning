@@ -16,12 +16,15 @@
 
 .media-frame {
   position: relative;
-  width: 100%;
+  /* width: 100%; */
   aspect-ratio: 4 / 3;
   border-radius: var(--border-radius);
   overflow: hidden;
   border: 1px solid var(--color-border);
   background: var(--color-ivory);
+  width: 150%;
+  height: 100%;
+
 }
 .media-frame img,
 .media-frame video {
@@ -68,10 +71,57 @@
   color: var(--color-muted-text);
 }
 
+/* ==========================================================
+   HOVER CAPTION
+   A short description that fades in over a real photo when the
+   visitor hovers (or focuses, for keyboard/touch users) it.
+   Add: <span class="photo-caption">Some text</span> as the last
+   child inside a .media-frame. Hidden automatically while that
+   frame's photo hasn't been supplied yet (.is-missing).
+   ========================================================== */
+.media-frame .photo-caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 1.1rem 1rem 0.7rem;
+  background: linear-gradient(to top, rgba(20, 12, 8, 0.85) 0%, rgba(20, 12, 8, 0.45) 60%, transparent 100%);
+  color: #fff;
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  line-height: 1.35;
+  text-align: left;
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 0.25s ease, transform 0.25s ease;
+  pointer-events: none;
+}
+.media-frame:hover .photo-caption,
+.media-frame:focus-within .photo-caption {
+  opacity: 1;
+  transform: translateY(0);
+}
+.media-frame.is-missing .photo-caption {
+  display: none;
+}
+/* Touch devices can't hover — show captions faintly all the time instead */
+@media (hover: none) {
+  .media-frame .photo-caption {
+    opacity: 1;
+    transform: translateY(0);
+    background: linear-gradient(to top, rgba(20, 12, 8, 0.78) 0%, transparent 100%);
+    font-size: 0.78rem;
+  }
+}
+
 /* Size variant used for small circular/leader photos */
 .media-frame.small {
   aspect-ratio: 1 / 1;
   max-width: 220px;
+}
+.media-frame.small .photo-caption {
+  font-size: 0.72rem;
+  padding: 0.7rem 0.6rem 0.5rem;
 }
 
 /* Video variant gets a play affordance in its placeholder */
