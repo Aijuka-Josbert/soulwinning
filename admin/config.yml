@@ -14,7 +14,7 @@ backend:
   # base_url: the login helper (OAuth provider) deployed separately —
   # see the setup notes for what goes here. Everything else in this
   # file works immediately; only login needs this filled in.
-  base_url: https://REPLACE-WITH-YOUR-OAUTH-WORKER-URL
+  base_url: https://soulwinning.josbertaijuka15.workers.dev
   auth_endpoint: auth
 
 # Where files uploaded through the general media picker land if a
