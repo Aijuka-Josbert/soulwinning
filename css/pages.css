@@ -81,6 +81,31 @@
   margin: 0 auto;
 }
 
+.construction-progress-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  max-width: 900px;
+  margin: 2.5rem auto 0;
+}
+
+.baptism-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.baptism-text h2 {
+  margin-bottom: 1rem;
+}
+@media (max-width: 700px) {
+  .baptism-block {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* Ministries */
 .ministry-item {
   display: flex;
