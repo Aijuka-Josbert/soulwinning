@@ -1,0 +1,82 @@
+# ============================================================
+# DECAP CMS CONFIG
+# This is the ONE file that defines what the /admin panel can
+# edit. Right now it's scoped to just the Gallery (photos +
+# videos) — the exact thing that kept landing in the repo with
+# broken names in the wrong folders. More sections (e.g. the
+# hero photo, pastor photo) can be added the same way later.
+# ============================================================
+
+backend:
+  name: github
+  repo: Aijuka-Josbert/soulwinning   # GitHub org/user + repo name
+  branch: main
+  # base_url: the login helper (OAuth provider) deployed separately —
+  # see the setup notes for what goes here. Everything else in this
+  # file works immediately; only login needs this filled in.
+  base_url: https://REPLACE-WITH-YOUR-OAUTH-WORKER-URL
+  auth_endpoint: auth
+
+# Where files uploaded through the general media picker land if a
+# field doesn't specify its own folder. The Gallery fields below
+# each point at the correct assets/ subfolder directly, so this is
+# just a sensible fallback.
+media_folder: "assets/images/uploads"
+public_folder: "assets/images/uploads"
+
+publish_mode: simple
+
+collections:
+  - name: "gallery"
+    label: "Gallery"
+    files:
+      - name: "gallery"
+        label: "Gallery Photos & Videos"
+        description: "Everything shown on the Gallery page's Photos and Videos tabs."
+        file: "content/gallery.json"
+        fields:
+          - label: "Photos"
+            name: "photos"
+            widget: "list"
+            summary: "{{fields.category}} — {{fields.alt}}"
+            fields:
+              - label: "Photo"
+                name: "image"
+                widget: "image"
+                media_folder: "/assets/images/gallery"
+                public_folder: "/assets/images/gallery"
+              - label: "Category"
+                name: "category"
+                widget: "select"
+                options:
+                  - { label: "Worship", value: "worship" }
+                  - { label: "Evangelism", value: "evangelism" }
+                  - { label: "Prayer", value: "prayer" }
+                  - { label: "Community", value: "community" }
+                  - { label: "Youth", value: "youth" }
+                  - { label: "Events", value: "events" }
+              - label: "Alt text (short, describes the photo — read aloud by screen readers)"
+                name: "alt"
+                widget: "string"
+              - label: "Caption (optional — shown when someone hovers/taps the photo)"
+                name: "caption"
+                widget: "string"
+                required: false
+          - label: "Videos"
+            name: "videos"
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - label: "Video file"
+                name: "video"
+                widget: "file"
+                media_folder: "/assets/videos"
+                public_folder: "/assets/videos"
+              - label: "Thumbnail image (shown before the video is played)"
+                name: "poster"
+                widget: "image"
+                media_folder: "/assets/images/gallery"
+                public_folder: "/assets/images/gallery"
+              - label: "Title"
+                name: "title"
+                widget: "string"

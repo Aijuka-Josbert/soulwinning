@@ -1,0 +1,85 @@
+{
+  "photos": [
+    {
+      "image": "assets/images/gallery/worship-1-placeholder.jpg",
+      "category": "worship",
+      "alt": "Worship",
+      "caption": ""
+    },
+    {
+      "image": "assets/images/gallery/worship-2-placeholder.jpg",
+      "category": "worship",
+      "alt": "Worship",
+      "caption": ""
+    },
+    {
+      "image": "assets/images/gallery/evangelism-1-placeholder.jpg",
+      "category": "evangelism",
+      "alt": "Evangelism",
+      "caption": "Home cell outreach — sharing God's Word with the children of Mbalwa."
+    },
+    {
+      "image": "assets/images/gallery/prayer-placeholder.jpg",
+      "category": "prayer",
+      "alt": "Prayer",
+      "caption": "Young disciples gathered in prayer and fellowship."
+    },
+    {
+      "image": "assets/images/ministries/homecell-fellowship-5.jpg",
+      "category": "community",
+      "alt": "Community",
+      "caption": "Our church building takes shape, brick by brick."
+    },
+    {
+      "image": "assets/images/ministries/homecell-fellowship-8.jpg",
+      "category": "youth",
+      "alt": "Youth",
+      "caption": "Pastor Ntumwa mentoring the next generation of disciples."
+    },
+    {
+      "image": "assets/images/gallery/events-placeholder.jpg",
+      "category": "events",
+      "alt": "Events",
+      "caption": "A teaching session at one of our leadership gatherings."
+    },
+    {
+      "image": "assets/images/gallery/evangelism-2-placeholder.jpg",
+      "category": "evangelism",
+      "alt": "Evangelism",
+      "caption": "Discipleship training inside our new church hall."
+    },
+    {
+      "image": "assets/images/ministries/homecell-fellowship-11.jpg",
+      "category": "community",
+      "alt": "Community",
+      "caption": "Community hands at work on the church building."
+    }
+  ],
+  "videos": [
+    {
+      "video": "assets/videos/crusade-prayer-time.mp4",
+      "poster": "assets/images/gallery/prayer-video-poster.jpg",
+      "title": "Prayer Time"
+    },
+    {
+      "video": "assets/videos/crusade-prayer-time-2.mp4",
+      "poster": "assets/images/gallery/prayer-video-2-poster.jpg",
+      "title": "Prayer Time"
+    },
+    {
+      "video": "assets/videos/crusade-praise-moment.mp4",
+      "poster": "assets/images/gallery/praise-video-poster.jpg",
+      "title": "Praise Moment"
+    },
+    {
+      "video": "assets/videos/crusade-dance.mp4",
+      "poster": "assets/images/gallery/dance-video-poster.jpg",
+      "title": "Dance of Praise"
+    },
+    {
+      "video": "assets/videos/pulpit-tiling.mp4",
+      "poster": "assets/images/church/pulpit-tiling-poster.jpg",
+      "title": "Preparing the Pulpit"
+    }
+  ]
+}

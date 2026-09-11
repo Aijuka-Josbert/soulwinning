@@ -343,6 +343,13 @@
   gap: 1.5rem;
 }
 
+.gallery-empty {
+  grid-column: 1 / -1;
+  text-align: center;
+  color: var(--color-muted-text);
+  padding: 2rem 0;
+}
+
 .gallery-item .placeholder-image {
   min-height: 160px;
   background: var(--color-white);

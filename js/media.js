@@ -8,27 +8,37 @@
    broken-image icon. As soon as a real file is placed at that
    same path, this does nothing and the real photo/video just
    shows.
+
+   initMediaFrames(container) is exposed on window so pages that
+   inject gallery content dynamically (see gallery.js) can run
+   this same fallback-detection on newly-added tiles, not just
+   what was already in the page at load.
    ========================================================== */
-document.addEventListener("DOMContentLoaded", function () {
-  // ---- HERO PHOTO FALLBACK ----
-  const heroImage = document.getElementById("heroImage");
-  if (heroImage) {
-    const heroBg = heroImage.querySelector(".hero-bg");
-    if (heroBg) {
-      if (heroBg.complete && heroBg.naturalWidth === 0) {
-        heroImage.classList.add("hero-missing");
+function initMediaFrames(root) {
+  const scope = root || document;
+
+  if (root === document || !root) {
+    const heroImage = document.getElementById("heroImage");
+    if (heroImage) {
+      const heroBg = heroImage.querySelector(".hero-bg");
+      if (heroBg) {
+        if (heroBg.complete && heroBg.naturalWidth === 0) {
+          heroImage.classList.add("hero-missing");
+        }
+        heroBg.addEventListener("error", () =>
+          heroImage.classList.add("hero-missing"),
+        );
+        heroBg.addEventListener("load", () =>
+          heroImage.classList.remove("hero-missing"),
+        );
       }
-      heroBg.addEventListener("error", () =>
-        heroImage.classList.add("hero-missing"),
-      );
-      heroBg.addEventListener("load", () =>
-        heroImage.classList.remove("hero-missing"),
-      );
     }
   }
 
-  // ---- ALL OTHER MEDIA FRAMES ----
-  document.querySelectorAll(".media-frame").forEach((frame) => {
+  scope.querySelectorAll(".media-frame").forEach((frame) => {
+    if (frame.dataset.mediaWatched) return; // don't double-bind
+    frame.dataset.mediaWatched = "true";
+
     const img = frame.querySelector("img");
     const video = frame.querySelector("video");
 
@@ -57,4 +67,9 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     }
   });
+}
+window.initMediaFrames = initMediaFrames;
+
+document.addEventListener("DOMContentLoaded", function () {
+  initMediaFrames(document);
 });
