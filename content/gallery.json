@@ -16,7 +16,7 @@
       "image": "assets/images/gallery/evangelism-1-placeholder.jpg",
       "category": "evangelism",
       "alt": "Evangelism",
-      "caption": "Home cell outreach â sharing God's Word with the children of Mbalwa."
+      "caption": "Home cell outreach Ã¢ÂÂ sharing God's Word with the children of Mbalwa."
     },
     {
       "image": "assets/images/gallery/prayer-placeholder.jpg",
@@ -59,6 +59,12 @@
       "category": "events",
       "alt": "church being built",
       "caption": "church being built"
+    },
+    {
+      "image": "https://res.cloudinary.com/i7oxv0kh/image/upload/v1789184760/soulwinning/gallery/log8cfzmndpz0zmjfrz6.jpg",
+      "category": "worship",
+      "alt": "Uploaded Media",
+      "caption": ""
     }
   ],
   "videos": [
